@@ -1,408 +1,524 @@
 <!DOCTYPE html>
 <html class="light" lang="en">
 <head>
-    <meta charset="utf-8"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <title>Health Haven | Legal & Compliance Portal</title>
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="View Health Haven's regulatory filings, terms of service, biometric privacy policy, and Botswana DPA 2024 compliance statement." />
-    <meta name="keywords" content="DPA 2024 Botswana, medical privacy policy Gaborone, biometric encryption compliance, Health Haven terms" />
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Source+Serif+4:ital,wght@0,400;0,600;1,400&amp;display=swap" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-    <style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-            display: inline-block;
-            line-height: 1;
-            text-transform: none;
-            letter-spacing: normal;
-            word-wrap: normal;
-            white-space: nowrap;
-            direction: ltr;
-        }
-        body {
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
-        .editorial-content h3 {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            font-weight: 600;
-            color: #003333;
-            margin-top: 2rem;
-            margin-bottom: 0.75rem;
-            font-size: 1.25rem;
-        }
-        .editorial-content p {
-            margin-bottom: 1rem;
-            line-height: 1.6;
-        }
-        .editorial-content ul {
-            list-style-type: disc;
-            margin-left: 1.5rem;
-            margin-bottom: 1.25rem;
-            space-y: 0.5rem;
-        }
-        .editorial-content li {
-            margin-bottom: 0.5rem;
-            line-height: 1.5;
-        }
-    </style>
-    <script id="tailwind-config">
-        tailwind.config = {
-          darkMode: "class",
-          theme: {
-            extend: {
-              "colors": {
-                      "tertiary-fixed-dim": "#f4ba9e",
-                      "on-error-container": "#93000a",
-                      "surface-container-lowest": "#ffffff",
-                      "on-surface-variant": "#404848",
-                      "on-tertiary-container": "#dca389",
-                      "on-tertiary": "#ffffff",
-                      "on-secondary": "#ffffff",
-                      "on-background": "#1a1c1c",
-                      "secondary-container": "#e6e2d8",
-                      "surface-bright": "#f9f9f9",
-                      "primary-fixed": "#bcebeb",
-                      "background": "#f9f9f9",
-                      "outline-variant": "#c0c8c7",
-                      "secondary-fixed-dim": "#cac6bd",
-                      "inverse-surface": "#2e3131",
-                      "surface": "#f9f9f9",
-                      "on-surface": "#1a1c1c",
-                      "on-primary-fixed": "#002020",
-                      "on-secondary-container": "#66645d",
-                      "on-secondary-fixed-variant": "#484740",
-                      "error-container": "#ffdad6",
-                      "secondary": "#605e57",
-                      "tertiary": "#472411",
-                      "tertiary-container": "#613925",
-                      "on-tertiary-fixed": "#311303",
-                      "surface-container-high": "#e8e8e7",
-                      "on-secondary-fixed": "#1c1c16",
-                      "surface-tint": "#386666",
-                      "surface-dim": "#d9dad9",
-                      "primary-container": "#1a4a4a",
-                      "primary": "#003333",
-                      "inverse-primary": "#a0cfcf",
-                      "surface-variant": "#e2e3e2",
-                      "outline": "#707978",
-                      "inverse-on-surface": "#f0f1f0",
-                      "on-error": "#ffffff",
-                      "on-primary": "#ffffff",
-                      "surface-container-highest": "#e2e3e2",
-                      "secondary-fixed": "#e6e2d8",
-                      "on-primary-fixed-variant": "#1e4e4e",
-                      "on-tertiary-fixed-variant": "#653d28",
-                      "surface-container-low": "#f3f4f3",
-                      "on-primary-container": "#8ab9b8",
-                      "surface-container": "#edeeed",
-                      "primary-fixed-dim": "#a0cfcf",
-                      "tertiary-fixed": "#ffdbcc",
-                      "error": "#ba1a1a",
-                      "sunset-gold": "#D4A843"
-              },
-              "borderRadius": {
-                      "DEFAULT": "0.5rem",
-                      "lg": "1rem",
-                      "xl": "1.5rem",
-                      "full": "9999px"
-              },
-              "spacing": {
-                      "base": "8px",
-                      "xl": "80px",
-                      "gutter": "24px",
-                      "md": "24px",
-                      "sm": "12px",
-                      "lg": "48px",
-                      "container-max": "1280px",
-                      "margin-mobile": "16px",
-                      "xs": "4px"
-              },
-              "fontFamily": {
-                      "body-md": ["Source Serif 4"],
-                      "label-sm": ["Plus Jakarta Sans"],
-                      "body-lg": ["Source Serif 4"],
-                      "display-lg-mobile": ["Plus Jakarta Sans"],
-                      "headline-sm": ["Plus Jakarta Sans"],
-                      "headline-md": ["Plus Jakarta Sans"],
-                      "display-lg": ["Plus Jakarta Sans"],
-                      "label-md": ["Plus Jakarta Sans"]
-              },
-              "fontSize": {
-                      "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
-                      "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }],
-                      "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
-                      "display-lg-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
-                      "headline-sm": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
-                      "headline-md": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
-                      "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
-                      "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }]
-              }
-            },
-          },
-        }
-      </script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Legal & Compliance | Health Haven - Privacy, Terms & DPA 2024</title>
+<meta name="description" content="Health Haven Legal & Compliance: Privacy Policy, Terms of Service, DPA 2024 Compliance Statement, and Medical Disclaimer."/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script>
+tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        "tertiary-fixed-dim": "#f4ba9e",
+        "on-error-container": "#93000a",
+        "surface-container-lowest": "#ffffff",
+        "on-surface-variant": "#404848",
+        "on-tertiary-container": "#dca389",
+        "on-tertiary": "#ffffff",
+        "on-secondary": "#ffffff",
+        "on-background": "#1a1c1c",
+        "secondary-container": "#e6e2d8",
+        "surface-bright": "#f9f9f9",
+        "primary-fixed": "#bcebeb",
+        "background": "#f9f9f9",
+        "outline-variant": "#c0c8c7",
+        "secondary-fixed-dim": "#cac6bd",
+        "inverse-surface": "#2e3131",
+        "surface": "#f9f9f9",
+        "on-surface": "#1a1c1c",
+        "on-primary-fixed": "#002020",
+        "on-secondary-container": "#66645d",
+        "on-secondary-fixed-variant": "#484740",
+        "error-container": "#ffdad6",
+        "secondary": "#605e57",
+        "tertiary": "#472411",
+        "tertiary-container": "#613925",
+        "on-tertiary-fixed": "#311303",
+        "surface-container-high": "#e8e8e7",
+        "on-secondary-fixed": "#1c1c16",
+        "surface-tint": "#386666",
+        "surface-dim": "#d9dad9",
+        "primary-container": "#1a4a4a",
+        "primary": "#003333",
+        "inverse-primary": "#a0cfcf",
+        "surface-variant": "#e2e3e2",
+        "outline": "#707978",
+        "inverse-on-surface": "#f0f1f0",
+        "on-error": "#ffffff",
+        "on-primary": "#ffffff",
+        "surface-container-highest": "#e2e3e2",
+        "secondary-fixed": "#e6e2d8",
+        "on-primary-fixed-variant": "#1e4e4e",
+        "on-tertiary-fixed-variant": "#653d28",
+        "surface-container-low": "#f3f4f3",
+        "on-primary-container": "#8ab9b8",
+        "surface-container": "#edeeed",
+        "primary-fixed-dim": "#a0cfcf",
+        "tertiary-fixed": "#ffdbcc",
+        "error": "#ba1a1a",
+        "sunset-gold": "#D4A843",
+        "warm-sand": "#F4F0E6"
+      },
+      borderRadius: { DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px" },
+      spacing: { base: "8px", xl: "80px", gutter: "24px", md: "24px", sm: "12px", lg: "48px", "container-max": "1280px", "margin-mobile": "16px", xs: "4px" },
+      fontFamily: { "body-md": ["Source Serif 4"], "label-sm": ["Plus Jakarta Sans"], "body-lg": ["Source Serif 4"], "display-lg-mobile": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"] },
+      fontSize: { "body-md": ["16px", {lineHeight: "24px", fontWeight: "400"}], "label-sm": ["12px", {lineHeight: "16px", fontWeight: "500"}], "body-lg": ["18px", {lineHeight: "28px", fontWeight: "400"}], "display-lg-mobile": ["32px", {lineHeight: "40px", letterSpacing: "-0.01em", fontWeight: "700"}], "headline-sm": ["24px", {lineHeight: "32px", fontWeight: "600"}], "headline-md": ["32px", {lineHeight: "40px", fontWeight: "600"}], "display-lg": ["48px", {lineHeight: "56px", letterSpacing: "-0.02em", fontWeight: "700"}], "label-md": ["14px", {lineHeight: "20px", letterSpacing: "0.01em", fontWeight: "600"}] }
+    }
+  }
+}
+</script>
+<style>
+.material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; vertical-align: middle; }
+#mobile-menu { transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; transform: translateX(100%); opacity: 0; }
+#mobile-menu.open { transform: translateX(0); opacity: 1; }
+#menu-overlay { transition: opacity 0.3s ease-in-out; opacity: 0; pointer-events: none; }
+#menu-overlay.open { opacity: 1; pointer-events: auto; }
+.legal-section h3 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 24px; font-weight: 600; line-height: 32px; color: #003333; margin-top: 48px; margin-bottom: 16px; }
+.legal-section h4 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 18px; font-weight: 600; line-height: 28px; color: #1a4a4a; margin-top: 24px; margin-bottom: 8px; }
+.legal-section p { font-family: 'Source Serif 4', serif; font-size: 16px; line-height: 24px; color: #404848; margin-bottom: 16px; }
+.legal-section ul { list-style-type: disc; padding-left: 24px; margin-bottom: 16px; }
+.legal-section ul li { font-family: 'Source Serif 4', serif; font-size: 16px; line-height: 24px; color: #404848; margin-bottom: 8px; }
+.legal-section a { color: #003333; text-decoration: underline; }
+.legal-section a:hover { color: #1a4a4a; }
+.toc-link { transition: all 0.2s ease; }
+.toc-link:hover { background-color: rgba(0,51,51,0.05); }
+.toc-link.active { background-color: #003333; color: #ffffff; border-color: #003333; }
+@media (max-width: 1024px) { .toc-sidebar { display: none; } }
+</style>
 </head>
-<body class="bg-surface text-on-surface selection:bg-primary-container selection:text-on-primary-container font-body-md">
+<body class="bg-surface text-on-surface">
 
-<!-- Top Navigation Bar -->
-<header class="fixed top-0 left-0 right-0 z-50 bg-surface/80 backdrop-blur-md shadow-sm transition-all duration-200" id="global-header">
-    <div class="flex justify-between items-center w-full px-gutter max-w-container-max mx-auto h-20">
-        <a class="text-headline-sm font-headline-sm font-bold text-primary flex items-center gap-xs" href="index.html">
-            <span class="material-symbols-outlined text-primary text-3xl">shield_heart</span>
-            <span>Health Haven</span>
-        </a>
-        <nav class="hidden md:flex items-center gap-lg">
-            <a class="text-on-surface-variant font-label-md hover:text-primary transition-colors duration-200" href="customers.html">Customers</a>
-            <a class="text-on-surface-variant font-label-md hover:text-primary transition-colors duration-200" href="packages.html">Packages</a>
-            <a class="text-on-surface-variant font-label-md hover:text-primary transition-colors duration-200" href="business.html">For Business</a>
-            <a class="text-on-surface-variant font-label-md hover:text-primary transition-colors duration-200" href="clinicians.html">For Clinicians</a>
-            <a class="text-on-surface-variant font-label-md hover:text-primary transition-colors duration-200" href="how-it-works.html">How It Works</a>
-        </nav>
-        <div class="flex items-center gap-md">
-            <a class="hidden sm:inline-block px-md py-sm bg-sunset-gold text-primary font-label-md rounded-xl hover:opacity-90 active:scale-95 transition-all" href="packages.html">Start Free Trial</a>
-            <button class="md:hidden text-primary p-2 focus:outline-none" id="mobile-menu-btn" aria-label="Toggle Menu">
-                <span class="material-symbols-outlined text-2xl">menu</span>
-            </button>
-        </div>
+<!-- ===== GLOBAL HEADER NAVIGATION ===== -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-surface/80 backdrop-blur-md shadow-sm">
+  <div class="flex justify-between items-center w-full px-gutter max-w-container-max mx-auto h-20">
+    <a href="index.html" class="text-headline-sm font-headline-sm font-bold text-primary hover:opacity-80 transition-opacity">Health Haven</a>
+    <div class="hidden md:flex items-center gap-lg">
+      <a class="text-on-surface-variant font-label-md hover:text-primary transition-colors duration-200" href="customers.html">Customers</a>
+      <a class="text-on-surface-variant font-label-md hover:text-primary transition-colors duration-200" href="packages.html">Packages</a>
+      <a class="text-on-surface-variant font-label-md hover:text-primary transition-colors duration-200" href="business.html">For Business</a>
+      <a class="text-on-surface-variant font-label-md hover:text-primary transition-colors duration-200" href="clinicians.html">For Clinicians</a>
+      <a class="text-on-surface-variant font-label-md hover:text-primary transition-colors duration-200" href="how-it-works.html">How It Works</a>
     </div>
+    <div class="flex items-center gap-md">
+      <a href="packages.html" class="hidden sm:inline-flex bg-sunset-gold text-primary px-lg py-sm rounded-lg font-label-md active:opacity-80 active:scale-95 transition-all shadow-sm hover:shadow-md items-center gap-sm">
+        Start Free Trial
+      </a>
+      <button id="menu-toggle" class="md:hidden text-primary p-2 rounded-lg hover:bg-surface-container transition-colors" aria-label="Open menu">
+        <span class="material-symbols-outlined text-2xl" id="menu-icon">menu</span>
+      </button>
+    </div>
+  </div>
 </header>
 
-<!-- Mobile Navigation Menu -->
-<div class="fixed inset-0 z-40 bg-surface/98 backdrop-blur-lg flex flex-col justify-center items-center gap-lg transition-transform duration-300 translate-x-full md:hidden" id="mobile-menu">
-    <button class="absolute top-6 right-6 text-primary p-2" id="mobile-menu-close" aria-label="Close Menu">
-        <span class="material-symbols-outlined text-3xl">close</span>
+<!-- Mobile Menu Overlay -->
+<div id="menu-overlay" class="fixed inset-0 bg-black/40 z-50 md:hidden"></div>
+<!-- Mobile Menu Panel -->
+<div id="mobile-menu" class="fixed top-0 right-0 w-72 max-w-[80vw] h-full bg-surface z-50 md:hidden shadow-xl flex flex-col">
+  <div class="flex justify-between items-center p-gutter border-b border-outline-variant/30">
+    <span class="text-headline-sm font-headline-sm font-bold text-primary">Menu</span>
+    <button id="menu-close" class="text-primary p-2 rounded-lg hover:bg-surface-container transition-colors" aria-label="Close menu">
+      <span class="material-symbols-outlined">close</span>
     </button>
-    <a class="text-headline-sm font-label-md text-on-surface-variant hover:text-primary" href="customers.html">Customers</a>
-    <a class="text-headline-sm font-label-md text-on-surface-variant hover:text-primary" href="packages.html">Packages</a>
-    <a class="text-headline-sm font-label-md text-on-surface-variant hover:text-primary" href="business.html">For Business</a>
-    <a class="text-headline-sm font-label-md text-on-surface-variant hover:text-primary" href="clinicians.html">For Clinicians</a>
-    <a class="text-headline-sm font-label-md text-on-surface-variant hover:text-primary" href="how-it-works.html">How It Works</a>
-    <a class="px-lg py-md bg-sunset-gold text-primary font-label-md rounded-xl shadow-md hover:shadow-lg mt-md" href="packages.html">Start Free Trial</a>
+  </div>
+  <div class="flex flex-col p-gutter gap-sm">
+    <a class="text-on-surface-variant font-label-md py-sm px-md rounded-lg hover:bg-surface-container border-l-4 border-transparent hover:border-outline" href="index.html">Homepage</a>
+    <a class="text-on-surface-variant font-label-md py-sm px-md rounded-lg hover:bg-surface-container border-l-4 border-transparent hover:border-outline" href="customers.html">Customers</a>
+    <a class="text-on-surface-variant font-label-md py-sm px-md rounded-lg hover:bg-surface-container border-l-4 border-transparent hover:border-outline" href="packages.html">Packages</a>
+    <a class="text-on-surface-variant font-label-md py-sm px-md rounded-lg hover:bg-surface-container border-l-4 border-transparent hover:border-outline" href="business.html">For Business</a>
+    <a class="text-on-surface-variant font-label-md py-sm px-md rounded-lg hover:bg-surface-container border-l-4 border-transparent hover:border-outline" href="clinicians.html">For Clinicians</a>
+    <a class="text-on-surface-variant font-label-md py-sm px-md rounded-lg hover:bg-surface-container border-l-4 border-transparent hover:border-outline" href="how-it-works.html">How It Works</a>
+  </div>
+  <div class="mt-auto p-gutter border-t border-outline-variant/30">
+    <a href="packages.html" class="block w-full text-center bg-sunset-gold text-primary px-lg py-md rounded-lg font-label-md active:opacity-80 active:scale-95 transition-all shadow-sm">Start Free Trial</a>
+  </div>
 </div>
 
 <main class="pt-20">
-    <!-- Hero / Title -->
-    <section class="max-w-container-max mx-auto px-gutter py-xl flex flex-col items-center text-center space-y-md">
-        <span class="inline-block px-sm py-xs bg-primary-container text-on-primary-container rounded-full font-label-sm text-label-sm">GOVERNANCE &amp; SOVEREIGNTY</span>
-        <h1 class="text-display-lg-mobile md:text-display-lg font-display-lg text-primary max-w-2xl leading-tight">
-            Legal &amp; Compliance Portal
-        </h1>
-        <p class="text-body-lg font-body-lg text-on-surface-variant max-w-xl italic">
-            Health Haven operates with strict alignment to the regulatory requirements of Botswana, guaranteeing complete transparency, clinical authority, and biometric privacy.
-        </p>
-    </section>
 
-    <!-- Content Area -->
-    <section class="max-w-container-max mx-auto px-gutter pb-xl grid grid-cols-1 lg:grid-cols-12 gap-xl">
-        <!-- Sidebar Navigation -->
-        <div class="lg:col-span-3 space-y-sm">
-            <div class="sticky top-28 bg-surface-container-low p-md rounded-2xl border border-outline-variant/30 space-y-2">
-                <p class="font-label-md text-primary font-bold px-sm pb-1 border-b border-outline-variant/30">Compliance Sections</p>
-                <a class="block px-sm py-sm rounded-lg text-label-md text-primary font-semibold bg-primary/5 border-l-4 border-primary" href="#disclaimer" id="nav-disclaimer">Medical Disclaimer</a>
-                <a class="block px-sm py-sm rounded-lg text-label-md text-on-surface-variant hover:text-primary hover:bg-surface-variant/50" href="#privacy" id="nav-privacy">Privacy Policy</a>
-                <a class="block px-sm py-sm rounded-lg text-label-md text-on-surface-variant hover:text-primary hover:bg-surface-variant/50" href="#terms" id="nav-terms">Terms of Service</a>
-                <a class="block px-sm py-sm rounded-lg text-label-md text-on-surface-variant hover:text-primary hover:bg-surface-variant/50" href="#dpa" id="nav-dpa">DPA 2024 Statement</a>
-            </div>
+<!-- ===== HERO HEADER ===== -->
+<section class="bg-primary text-on-primary py-xl">
+  <div class="max-w-container-max mx-auto px-gutter">
+    <div class="inline-flex items-center gap-xs bg-on-primary/10 px-md py-xs rounded-full mb-md">
+      <span class="material-symbols-outlined text-[18px]">gavel</span>
+      <span class="text-label-md">Last Updated: 22 May 2024</span>
+    </div>
+    <h1 class="font-display-lg text-display-lg mb-md">Legal & Compliance</h1>
+    <p class="font-body-lg text-body-lg opacity-80 max-w-2xl">
+      Health Haven operates with full transparency regarding data protection, user rights, and clinical governance. This page contains our Privacy Policy, Terms of Service, DPA 2024 Compliance Statement, and Medical Disclaimer.
+    </p>
+  </div>
+</section>
+
+<!-- ===== MEDICAL DISCLAIMER CALLOUT ===== -->
+<section class="max-w-container-max mx-auto px-gutter py-lg">
+  <div class="bg-error-container border border-error rounded-xl p-lg flex flex-col md:flex-row items-start gap-md">
+    <div class="w-12 h-12 bg-error/10 rounded-full flex items-center justify-center shrink-0">
+      <span class="material-symbols-outlined text-error text-2xl">medical_services</span>
+    </div>
+    <div>
+      <h2 class="font-headline-sm text-headline-sm text-error mb-sm">Medical Disclaimer</h2>
+      <p class="font-body-md text-on-surface-variant">
+        <strong>Health Haven does not replace a primary care physician or emergency medical services.</strong> Our platform provides wellness coaching, proactive health monitoring, and clinical guidance intended to augment &mdash; not substitute &mdash; professional medical diagnosis, treatment, or care. In case of a medical emergency, call 997 (Botswana Emergency Services) or visit your nearest hospital immediately. Always consult with a qualified healthcare provider before making any health-related decisions.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== LEGAL CONTENT WITH TOC ===== -->
+<section class="max-w-container-max mx-auto px-gutter pb-xl">
+  <div class="flex gap-xl">
+
+    <!-- Table of Contents Sidebar -->
+    <aside class="toc-sidebar w-64 shrink-0">
+      <div class="sticky top-24 bg-surface-container-low rounded-xl p-md border border-outline-variant/30">
+        <p class="font-label-md text-primary mb-sm uppercase tracking-wider">Contents</p>
+        <nav class="flex flex-col gap-xs">
+          <a href="#privacy" class="toc-link text-label-sm font-label-sm text-on-surface-variant py-xs px-sm rounded-lg border-l-2 border-transparent">Privacy Policy</a>
+          <a href="#terms" class="toc-link text-label-sm font-label-sm text-on-surface-variant py-xs px-sm rounded-lg border-l-2 border-transparent">Terms of Service</a>
+          <a href="#dpa" class="toc-link text-label-sm font-label-sm text-on-surface-variant py-xs px-sm rounded-lg border-l-2 border-transparent">DPA 2024 Compliance</a>
+          <a href="#disclaimer" class="toc-link text-label-sm font-label-sm text-on-surface-variant py-xs px-sm rounded-lg border-l-2 border-transparent">Medical Disclaimer</a>
+        </nav>
+      </div>
+    </aside>
+
+    <!-- Legal Content -->
+    <div class="flex-1 min-w-0">
+
+      <!-- ===== PRIVACY POLICY ===== -->
+      <div id="privacy" class="legal-section mb-xl scroll-mt-24">
+        <div class="flex items-center gap-md mb-lg pb-md border-b border-outline-variant/30">
+          <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+            <span class="material-symbols-outlined text-primary">lock</span>
+          </div>
+          <div>
+            <h2 class="font-headline-md text-headline-md text-primary">Privacy Policy</h2>
+            <p class="text-label-sm text-on-surface-variant">Effective Date: 1 January 2024</p>
+          </div>
         </div>
 
-        <!-- Editorial Content -->
-        <div class="lg:col-span-9 space-y-xl editorial-content">
-            <!-- Medical Disclaimer Box -->
-            <div id="disclaimer" class="scroll-mt-28 bg-tertiary-container/10 border-l-4 border-sunset-gold p-lg rounded-2xl space-y-md">
-                <div class="flex items-center gap-sm text-primary">
-                    <span class="material-symbols-outlined text-sunset-gold text-[28px]">warning</span>
-                    <h2 class="text-headline-sm font-headline-sm font-bold text-primary">Medical Disclaimer</h2>
-                </div>
-                <p class="text-body-md text-on-surface-variant leading-relaxed">
-                    <strong>IMPORTANT NOTICE:</strong> Health Haven is an acquisition, marketing, and dashboard data aggregation portal. We do not directly provide emergency services, acute primary care, or urgent medical interventions.
-                </p>
-                <p class="text-body-md text-on-surface-variant leading-relaxed">
-                    This platform serves to connect individuals and corporate cohorts to licensed practitioners registered under the <strong>Botswana Health Professions Council (BHPC)</strong>. Your reliance on any diagnostic indices or vital threshold recommendations aggregated by Health Haven is strictly for proactive prevention purposes. Do not bypass or delay calling your primary doctor, cardiologist, endocrinologist, or Botswana emergency services (+267 997 / 998) in an acute cardiovascular or metabolic event.
-                </p>
-            </div>
+        <h3>1. Introduction</h3>
+        <p>Health Haven (Pty) Ltd ("Health Haven", "we", "us", or "our") is committed to protecting the privacy and security of your personal information. This Privacy Policy explains how we collect, use, store, and protect your data when you use our website, mobile application, and clinical services (collectively, the "Services").</p>
+        <p>By accessing or using our Services, you acknowledge that you have read, understood, and agree to this Privacy Policy. If you do not agree, please do not use our Services.</p>
 
-            <!-- Privacy Policy -->
-            <div id="privacy" class="scroll-mt-28 space-y-md border-t border-outline-variant/30 pt-lg">
-                <div class="flex items-center gap-sm">
-                    <span class="material-symbols-outlined text-primary text-[28px]">security</span>
-                    <h2 class="text-headline-md font-headline-md text-primary">Biometric Privacy Policy</h2>
-                </div>
-                <p class="text-label-sm text-on-surface-variant">Last Updated: May 2026</p>
-                
-                <p>At Health Haven, we understand that biometric data—including resting heart rates, continuous blood glucose monitoring, weight dynamics, and sleep records—constitutes the highest tier of sensitive personal data. This privacy policy defines how we safeguard your information.</p>
-                
-                <h3>1. Aggregation Protocols</h3>
-                <p>We only aggregate health metrics that you explicitly consent to link. If you connect biometric sensors (such as Withings scales, blood pressure monitors, or activity trackers) to the Health Haven portal, your data is isolated on our secure cloud nodes before transfer. All data transmission uses end-to-end TLS 1.3 encryption protocols.</p>
-                
-                <h3>2. Zero Third-Party Monetization</h3>
-                <p><strong>We do not sell, rent, lease, or share your medical history, diagnostics, or biometric telemetry with any third party.</strong> This includes third-party advertisers, market researchers, and underwriters. For B2B corporate wellness cohorts, individual health charts are strictly hidden from HR managers and employer administrators; employers only receive aggregated, anonymized demographic reports to measure overall workforce ROI and chronic disease prevalence.</p>
-                
-                <h3>3. Biometric Encryption &amp; Storage</h3>
-                <p>All gathered medical files and biometric feeds are stored on ISO 27001 certified database shards using AES-256 military-grade encryption at rest. Keys are isolated in hardware security modules (HSMs) separate from client-facing application code.</p>
-            </div>
+        <h3>2. Data We Collect</h3>
+        <p>We collect the following categories of personal data:</p>
+        <ul>
+          <li><strong>Personal Identifiers:</strong> Name, email address, phone number, national identity number, and residential address.</li>
+          <li><strong>Health Information:</strong> Biometric data (weight, heart rate, blood pressure, sleep patterns), medical history, symptoms, and clinical notes.</li>
+          <li><strong>Device Information:</strong> Data from connected health devices (Withings smart scales, watches, and other compatible wearables).</li>
+          <li><strong>Usage Data:</strong> IP address, browser type, operating system, app usage patterns, and website interaction data.</li>
+          <li><strong>Corporate Data:</strong> For B2B clients, employee IDs and aggregated health metrics (individual health data is never shared with employers).</li>
+        </ul>
 
-            <!-- Terms of Service -->
-            <div id="terms" class="scroll-mt-28 space-y-md border-t border-outline-variant/30 pt-lg">
-                <div class="flex items-center gap-sm">
-                    <span class="material-symbols-outlined text-primary text-[28px]">description</span>
-                    <h2 class="text-headline-md font-headline-md text-primary">Terms of Service</h2>
-                </div>
-                <p class="text-label-sm text-on-surface-variant">Last Updated: May 2026</p>
-                
-                <h3>1. The 30-Day Free Trial</h3>
-                <p>Health Haven offers a 30-day trial for self-selected wellness packages (Mompati, Botsogo, Mooki). During this trial phase, you have access to continuous vitals logging and standard app features. Specialist clinician remote video consultations (as provided on the Mooki and Motlamedi packages) may be subjected to availability limits or initial co-pays during the trial, as governed by local insurance schedules.</p>
-                
-                <h3>2. Cancellation and Package Shifts</h3>
-                <p>You can cancel your subscription at any time via your user dashboard. Because we use a unified clinical data layer (Breeze CDM), cancelling your active package does not delete your historical clinical charts unless you explicitly request a permanent purge. If you choose to resume service or shift to a new package, your existing medical history immediately reconnects, preventing critical medical data fragmentation.</p>
-                
-                <h3>3. User Conduct &amp; Verification</h3>
-                <p>You agree to provide true, accurate, and current biometrics. Falsifying clinical vitals or identity to bypass clinical triage triggers is a violation of these terms and may result in immediate account suspension.</p>
-            </div>
+        <h3>3. Data Aggregation Protocols</h3>
+        <p>Health Haven employs clinical-grade data aggregation protocols to ensure the integrity and utility of your health information:</p>
+        <ul>
+          <li>All biometric data is synchronised from FDA/CE-approved devices via encrypted API connections.</li>
+          <li>Data is normalised against clinically validated reference ranges specific to Southern African populations.</li>
+          <li>Trend analysis is performed using rolling 30-day, 90-day, and 12-month windows to identify clinically significant patterns.</li>
+          <li>Aggregated workforce health reports for B2B clients are anonymised using k-anonymity protocols (k>=5) before any summary statistics are generated.</li>
+        </ul>
 
-            <!-- DPA Compliance Statement -->
-            <div id="dpa" class="scroll-mt-28 space-y-md border-t border-outline-variant/30 pt-lg pb-xl">
-                <div class="flex items-center gap-sm">
-                    <span class="material-symbols-outlined text-primary text-[28px]">gavel</span>
-                    <h2 class="text-headline-md font-headline-md text-primary">DPA 2024 Compliance Statement</h2>
-                </div>
-                <p class="text-label-sm text-on-surface-variant">Botswana Data Protection Act (2024) Alignment</p>
-                
-                <p>Health Haven operates in full compliance with the <strong>Botswana Data Protection Act, 2024 (DPA 2024)</strong>. We have implemented robust structures to respect your rights as a data subject in Gaborone, Francistown, and throughout the SADC region.</p>
-                
-                <h3>1. Key Protection Frameworks</h3>
-                <ul>
-                    <li><strong>Section 74 Cross-Border Data Flows:</strong> All biometric and patient files are hosted locally within secure Botswana cloud nodes, or transferred exclusively to jurisdictions that meet or exceed DPA 2024 data privacy safeguards.</li>
-                    <li><strong>72-Hour Breach Notification:</strong> In the highly unlikely event of a security anomaly, Health Haven maintains automated incident response protocols to notify the Botswana Information Commissioner and affected users within 72 hours of detection.</li>
-                    <li><strong>Data Minimization:</strong> We only process personal credentials and biological vitals strictly necessary to deliver your chosen wellness package.</li>
-                </ul>
+        <h3>4. Zero Third-Party Selling</h3>
+        <p><strong>Health Haven does not sell, rent, or trade your personal information to any third party.</strong> We do not monetise user data through advertising networks, data brokers, or any other commercial arrangement. Your data is used exclusively for:</p>
+        <ul>
+          <li>Providing clinical services and health monitoring</li>
+          <li>Generating personal health insights for your benefit</li>
+          <li>Quality improvement and clinical research (using fully anonymised datasets only)</li>
+          <li>Legal compliance and regulatory reporting as required by law</li>
+        </ul>
 
-                <h3>2. Data Protection Officer (DPO) Contact</h3>
-                <p>For any inquiries regarding your right to access, rectify, restrict processing, or request complete deletion of your personal and biometric history, please contact our dedicated DPO directly at:</p>
-                <div class="bg-primary-container text-white p-md rounded-xl max-w-md shadow-sm border border-primary font-sans">
-                    <p class="font-bold text-sunset-gold mb-1">Health Haven Data Protection Office</p>
-                    <p class="text-sm">Email: <a href="mailto:dpo@healthhaven.co.bw" class="underline text-white hover:text-sunset-gold transition-colors">dpo@healthhaven.co.bw</a></p>
-                    <p class="text-sm">Address: Plot 54351, Central Business District, Gaborone, Botswana</p>
-                </div>
-            </div>
+        <h3>5. Biometric Encryption</h3>
+        <p>Your biometric and health data is protected using the following encryption standards:</p>
+        <ul>
+          <li><strong>Encryption in Transit:</strong> All data transmitted between your device and our servers uses TLS 1.3 with AES-256-GCM.</li>
+          <li><strong>Encryption at Rest:</strong> All stored health data is encrypted using AES-256 with keys managed through AWS KMS Hardware Security Modules (HSMs).</li>
+          <li><strong>End-to-End Encryption:</strong> Clinician-patient messaging uses end-to-end encryption; even Health Haven cannot read the content of your clinical conversations.</li>
+          <li><strong>Key Rotation:</strong> Encryption keys are rotated every 90 days in accordance with ISO 27001 standards.</li>
+        </ul>
+
+        <h3>6. Data Retention</h3>
+        <p>Personal health data is retained for the duration of your active account plus 7 years following account closure, as required by Botswana medical records regulations. After this period, data is securely deleted using NIST 800-88 compliant sanitisation methods.</p>
+
+        <h3>7. Your Rights</h3>
+        <p>Under the DPA 2024, you have the right to:</p>
+        <ul>
+          <li>Access your personal data</li>
+          <li>Correct inaccurate or incomplete data</li>
+          <li>Request deletion of your data (subject to medical retention requirements)</li>
+          <li>Object to processing of your data</li>
+          <li>Request a portable copy of your data</li>
+          <li>Withdraw consent at any time</li>
+        </ul>
+        <p>To exercise these rights, contact our Data Protection Officer at <a href="mailto:dpo@healthhaven.co.bw">dpo@healthhaven.co.bw</a>.</p>
+
+        <h3>8. Contact</h3>
+        <p>For privacy-related enquiries, please contact our Data Protection Officer at <a href="mailto:dpo@healthhaven.co.bw">dpo@healthhaven.co.bw</a> or write to: Health Haven (Pty) Ltd, Plot 50371, Fairgrounds Office Park, Gaborone, Botswana.</p>
+      </div>
+
+      <!-- ===== TERMS OF SERVICE ===== -->
+      <div id="terms" class="legal-section mb-xl scroll-mt-24">
+        <div class="flex items-center gap-md mb-lg pb-md border-b border-outline-variant/30">
+          <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+            <span class="material-symbols-outlined text-primary">contract</span>
+          </div>
+          <div>
+            <h2 class="font-headline-md text-headline-md text-primary">Terms of Service</h2>
+            <p class="text-label-sm text-on-surface-variant">Effective Date: 1 January 2024</p>
+          </div>
         </div>
-    </section>
+
+        <h3>1. Acceptance of Terms</h3>
+        <p>By registering for, accessing, or using Health Haven's Services, you agree to be bound by these Terms of Service ("Terms"). If you are using the Services on behalf of an organisation, you represent that you have authority to bind that organisation to these Terms.</p>
+
+        <h3>2. Description of Services</h3>
+        <p>Health Haven provides a digital health management platform that connects users with licensed healthcare professionals in Botswana. Our Services include health tracking, clinical consultations, wellness coaching, and corporate health management solutions.</p>
+
+        <h3>3. 30-Day Free Trial</h3>
+        <p>All new individual subscribers are eligible for a 30-day free trial ("Trial Period") of their selected plan. During the Trial Period:</p>
+        <ul>
+          <li>You will have full access to all features included in your selected plan.</li>
+          <li>No payment information is required to start the Trial Period.</li>
+          <li>At the end of the Trial Period, you may choose to continue with a paid subscription or downgrade to a limited free tier.</li>
+          <li>If you do not select a paid plan before the Trial Period expires, your account will be automatically downgraded to the free tier with limited features.</li>
+          <li>Each individual is entitled to one Trial Period per lifetime of their account.</li>
+        </ul>
+
+        <h3>4. Subscription and Billing</h3>
+        <p>Paid subscriptions are billed monthly in advance. All prices are quoted in Botswana Pula (BWP) and are inclusive of applicable taxes. Subscription fees are non-refundable except where required by law.</p>
+
+        <h3>5. Cancellation Policy</h3>
+        <p>You may cancel your subscription at any time through your account settings or by contacting our support team. Upon cancellation:</p>
+        <ul>
+          <li>Your subscription will remain active until the end of the current billing period.</li>
+          <li>No partial refunds will be issued for unused days within a billing period.</li>
+          <li>Your health data will be retained in accordance with our Privacy Policy and applicable medical records regulations.</li>
+          <li>You may reactivate your account at any time by resuming a paid subscription.</li>
+          <li>B2B subscriptions may be subject to additional contractual notice periods as specified in the corporate service agreement.</li>
+        </ul>
+
+        <h3>6. User Responsibilities</h3>
+        <p>You agree to:</p>
+        <ul>
+          <li>Provide accurate and complete registration information.</li>
+          <li>Maintain the security of your account credentials.</li>
+          <li>Use the Services only for lawful purposes and in accordance with these Terms.</li>
+          <li>Not share your account with any other person.</li>
+          <li>Not use automated systems to access the Services without written permission.</li>
+        </ul>
+
+        <h3>7. Limitation of Liability</h3>
+        <p>To the fullest extent permitted by law, Health Haven's total liability for any claim arising from or relating to these Terms or the Services shall not exceed the total amount paid by you to Health Haven in the 12 months preceding the claim.</p>
+
+        <h3>8. Governing Law</h3>
+        <p>These Terms are governed by the laws of the Republic of Botswana. Any dispute arising from these Terms shall be subject to the exclusive jurisdiction of the courts of Botswana.</p>
+
+        <h3>9. Changes to Terms</h3>
+        <p>We may update these Terms from time to time. We will notify you of any material changes at least 30 days before they take effect. Your continued use of the Services after changes become effective constitutes acceptance of the revised Terms.</p>
+      </div>
+
+      <!-- ===== DPA 2024 COMPLIANCE ===== -->
+      <div id="dpa" class="legal-section mb-xl scroll-mt-24">
+        <div class="flex items-center gap-md mb-lg pb-md border-b border-outline-variant/30">
+          <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+            <span class="material-symbols-outlined text-primary">shield</span>
+          </div>
+          <div>
+            <h2 class="font-headline-md text-headline-md text-primary">DPA 2024 Compliance Statement</h2>
+            <p class="text-label-sm text-on-surface-variant">Botswana Data Protection Act, 2024</p>
+          </div>
+        </div>
+
+        <div class="bg-warm-sand/40 rounded-xl p-md border border-sunset-gold/20 mb-lg">
+          <p class="font-body-md text-on-surface-variant">
+            <strong>Health Haven (Pty) Ltd is fully committed to compliance with the Botswana Data Protection Act 2024 (Act No. [XX] of 2024).</strong> This statement outlines our data protection practices, breach reporting procedures, and cross-border data transfer compliance.
+          </p>
+        </div>
+
+        <h3>1. Data Protection Officer</h3>
+        <p>Health Haven has appointed a Data Protection Officer (DPO) responsible for overseeing our data protection strategy and ensuring compliance with the DPA 2024:</p>
+        <ul>
+          <li><strong>Name:</strong> Ms. Lesedi Kgosietsile</li>
+          <li><strong>Email:</strong> <a href="mailto:dpo@healthhaven.co.bw">dpo@healthhaven.co.bw</a></li>
+          <li><strong>Phone:</strong> +267 31 000 000</li>
+          <li><strong>Address:</strong> Plot 50371, Fairgrounds Office Park, Gaborone, Botswana</li>
+          <li><strong>Office Hours:</strong> Monday to Friday, 08:00 - 17:00 CAT</li>
+        </ul>
+        <p>The DPO can be contacted directly for any data protection concerns, subject access requests, or breach notifications.</p>
+
+        <h3>2. 72-Hour Breach Reporting</h3>
+        <p>In accordance with Section 58 of the DPA 2024, Health Haven maintains a strict breach notification protocol:</p>
+        <ul>
+          <li><strong>Detection:</strong> All potential data breaches are detected through automated monitoring systems and manual security reviews.</li>
+          <li><strong>Assessment:</strong> Upon detection, our Security Team assesses the breach within 4 hours to determine the scope and risk to data subjects.</li>
+          <li><strong>Notification to Authority:</strong> If the breach poses a risk to the rights and freedoms of natural persons, we notify the Information Commissioner's Office within 72 hours of becoming aware of the breach.</li>
+          <li><strong>Notification to Data Subjects:</strong> Where the breach is likely to result in a high risk to the rights and freedoms of affected individuals, we communicate directly with those individuals without undue delay.</li>
+          <li><strong>Documentation:</strong> All breaches are documented regardless of whether notification is required, including the facts, effects, and remedial actions taken.</li>
+        </ul>
+
+        <h3>3. Section 74 Cross-Border Compliance</h3>
+        <p>Under Section 74 of the DPA 2024, Health Haven complies with cross-border data transfer requirements as follows:</p>
+        <ul>
+          <li><strong>Primary Data Storage:</strong> All personal data is stored within the Republic of Botswana, in ISO 27001 certified data centres located in Gaborone.</li>
+          <li><strong>Cloud Infrastructure:</strong> Our primary cloud provider (AWS) operates an Africa (South Africa) Region. Where data transit through South African nodes occurs, appropriate safeguards including Standard Contractual Clauses (SCCs) and encryption in transit are implemented.</li>
+          <li><strong>Third-Party Processors:</strong> Any third-party service provider that may process personal data outside Botswana is subject to a Data Processing Agreement that includes DPA 2024 compliant safeguards.</li>
+          <li><strong>Data Localisation:</strong> Biometric and health data classified as "sensitive personal data" under the DPA 2024 is strictly localised within Botswana and is not transferred across borders under any circumstances.</li>
+          <li><strong>Adequacy Decisions:</strong> We only transfer personal data to jurisdictions that have been deemed adequate by the Botswana Information Commissioner or where appropriate safeguards have been implemented.</li>
+        </ul>
+
+        <h3>4. Lawful Basis for Processing</h3>
+        <p>Health Haven processes personal data under the following lawful bases as set out in Section 27 of the DPA 2024:</p>
+        <ul>
+          <li><strong>Consent:</strong> Explicit consent is obtained for the processing of sensitive health data.</li>
+          <li><strong>Contractual Necessity:</strong> Processing necessary for the performance of our service agreement with you.</li>
+          <li><strong>Legal Obligation:</strong> Processing necessary for compliance with medical records and public health regulations.</li>
+          <li><strong>Vital Interests:</strong> Processing necessary to protect your vital interests in emergency situations.</li>
+        </ul>
+
+        <h3>5. Security Measures</h3>
+        <p>We implement appropriate technical and organisational measures to ensure a level of security appropriate to the risk, including:</p>
+        <ul>
+          <li>Pseudonymisation and encryption of personal data</li>
+          <li>Ongoing confidentiality, integrity, availability, and resilience of processing systems</li>
+          <li>Regular testing, assessing, and evaluating the effectiveness of security measures</li>
+          <li>Annual third-party security audits and penetration testing</li>
+          <li>Staff training on data protection and information security</li>
+        </ul>
+
+        <h3>6. Registration</h3>
+        <p>Health Haven (Pty) Ltd is registered as a data controller and data processor with the Botswana Information Commissioner's Office. Registration number: <strong>DPC/BW/2024/001234</strong>.</p>
+      </div>
+
+      <!-- ===== MEDICAL DISCLAIMER ===== -->
+      <div id="disclaimer" class="legal-section scroll-mt-24">
+        <div class="flex items-center gap-md mb-lg pb-md border-b border-outline-variant/30">
+          <div class="w-12 h-12 bg-error/10 rounded-full flex items-center justify-center">
+            <span class="material-symbols-outlined text-error">medical_services</span>
+          </div>
+          <div>
+            <h2 class="font-headline-md text-headline-md text-primary">Medical Disclaimer</h2>
+            <p class="text-label-sm text-on-surface-variant">Please Read Carefully</p>
+          </div>
+        </div>
+
+        <div class="bg-error-container border border-error rounded-xl p-lg mb-lg">
+          <h3 class="!text-error !mt-0">Important Notice</h3>
+          <p class="!mb-0"><strong>Health Haven is a wellness and health management platform, not a medical diagnosis or emergency service.</strong> The information, guidance, and services provided through our platform are intended for general wellness purposes only and should not be construed as medical advice, diagnosis, or treatment.</p>
+        </div>
+
+        <h3>1. Not a Substitute for Professional Medical Care</h3>
+        <p>The Services provided by Health Haven, including health tracking, AI-generated insights, and clinician consultations, are designed to complement &mdash; not replace &mdash; the relationship between you and your primary healthcare provider. Always seek the advice of your physician or other qualified health provider with any questions you may have regarding a medical condition.</p>
+
+        <h3>2. Emergency Situations</h3>
+        <p>If you are experiencing a medical emergency, <strong>call 997 immediately</strong> (Botswana Emergency Medical Services) or proceed to the nearest hospital emergency department. Do not rely on Health Haven for emergency medical assistance. Our platform is not monitored for emergencies and clinicians are not available for emergency consultation 24/7.</p>
+
+        <h3>3. AI-Generated Insights</h3>
+        <p>Any health insights, recommendations, or alerts generated by our artificial intelligence systems are based on pattern recognition and population-level data. These insights are informational only and do not constitute a clinical diagnosis. Always verify AI-generated recommendations with a licensed clinician before taking action.</p>
+
+        <h3>4. Clinician Consultations</h3>
+        <p>Telemedicine consultations through Health Haven are provided by licensed Botswana Health Professions Council (BHPC) registered clinicians. However, telemedicine has limitations and may not be appropriate for all medical conditions. Your clinician will advise if an in-person examination is required.</p>
+
+        <h3>5. Accuracy of Data</h3>
+        <p>Health Haven relies on data you provide and data from connected devices. The accuracy of insights and recommendations depends on the accuracy and completeness of this data. Ensure all devices are properly calibrated and report any discrepancies to our support team.</p>
+
+        <h3>6. No Guarantee of Results</h3>
+        <p>Individual results from using Health Haven's Services may vary. We do not guarantee specific health outcomes, weight loss, disease reversal, or the prevention of any medical condition. Health outcomes depend on many factors including genetics, adherence to recommendations, and individual physiology.</p>
+
+        <h3>7. Regulatory Compliance</h3>
+        <p>Health Haven (Pty) Ltd is registered with the Botswana Health Professions Council and operates in compliance with the Medical Act (Cap 44:03) and the Public Health Act (Cap 63:01). Our clinicians are independently licensed by the BHPC and maintain their own professional liability insurance.</p>
+
+        <h3>8. Contact for Medical Concerns</h3>
+        <p>If you have questions about the appropriateness of Health Haven for your specific health situation, please consult your primary care physician before registering for our Services.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 </main>
 
-<!-- Footer -->
-<footer class="bg-surface-container-low border-t border-outline-variant">
-    <div class="w-full py-xl px-gutter max-w-container-max mx-auto flex flex-col md:flex-row justify-between gap-md">
-        <div class="space-y-md md:max-w-xs">
-            <a class="text-headline-sm font-headline-sm font-bold text-primary flex items-center gap-xs" href="index.html">
-                <span class="material-symbols-outlined text-primary text-2xl">shield_heart</span>
-                <span>Health Haven</span>
-            </a>
-            <p class="text-body-md font-body-md text-on-surface-variant">Providing clinically guided, culturally localized health journeys for the modern Batswana.</p>
-            <div class="flex gap-md">
-                <a class="text-on-surface-variant hover:text-primary transition-colors" href="https://twitter.com" target="_blank" aria-label="Twitter"><span class="material-symbols-outlined">social_leaderboard</span></a>
-                <a class="text-on-surface-variant hover:text-primary transition-colors" href="mailto:info@healthhaven.co.bw" aria-label="Email"><span class="material-symbols-outlined">alternate_email</span></a>
-                <a class="text-on-surface-variant hover:text-primary transition-colors" href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><span class="material-symbols-outlined">share</span></a>
-            </div>
-        </div>
-        <div class="grid grid-cols-2 sm:grid-cols-3 gap-xl">
-            <div class="flex flex-col gap-sm">
-                <span class="font-label-md text-primary">Sitemap</span>
-                <a class="text-on-surface-variant hover:text-primary transition-colors text-label-md" href="customers.html">Customers</a>
-                <a class="text-on-surface-variant hover:text-primary transition-colors text-label-md" href="packages.html">Packages</a>
-                <a class="text-on-surface-variant hover:text-primary transition-colors text-label-md" href="business.html">For Business</a>
-            </div>
-            <div class="flex flex-col gap-sm">
-                <span class="font-label-md text-primary">Compliance &amp; Legal</span>
-                <a class="text-on-surface-variant hover:text-primary transition-colors text-label-md" href="legal.html#privacy">Privacy Policy</a>
-                <a class="text-on-surface-variant hover:text-primary transition-colors text-label-md" href="legal.html#terms">Terms of Service</a>
-                <a class="text-on-surface-variant hover:text-primary transition-colors text-label-md" href="legal.html#dpa">DPA Compliance</a>
-            </div>
-            <div class="flex flex-col gap-sm">
-                <span class="font-label-md text-primary">Authority Info</span>
-                <p class="text-label-sm text-on-surface-variant">Registered BHPC Entity</p>
-                <p class="text-label-sm text-on-surface-variant">DPA Compliant 2024</p>
-                <p class="text-label-sm text-on-surface-variant">Gaborone, Botswana</p>
-            </div>
-        </div>
+<!-- ===== GLOBAL FOOTER ===== -->
+<footer class="bg-surface-container-low w-full py-xl">
+  <div class="px-gutter max-w-container-max mx-auto flex flex-col md:flex-row justify-between gap-md">
+    <div class="space-y-md max-w-xs">
+      <a href="index.html" class="text-headline-sm font-headline-sm font-bold text-primary hover:opacity-80 transition-opacity">Health Haven</a>
+      <p class="text-body-md font-body-md text-on-surface-variant">Leading the transformation of healthcare through clinical excellence and modern data. Botswana's trusted clinician-led wellness platform.</p>
+      <div class="flex gap-md">
+        <a href="https://twitter.com/healthhavenbw" target="_blank" rel="noopener" class="text-on-surface-variant hover:text-primary transition-colors" aria-label="Twitter"><span class="material-symbols-outlined">share</span></a>
+        <a href="https://linkedin.com/company/healthhavenbw" target="_blank" rel="noopener" class="text-on-surface-variant hover:text-primary transition-colors" aria-label="LinkedIn"><span class="material-symbols-outlined">hub</span></a>
+        <a href="https://instagram.com/healthhavenbw" target="_blank" rel="noopener" class="text-on-surface-variant hover:text-primary transition-colors" aria-label="Instagram"><span class="material-symbols-outlined">photo_camera</span></a>
+      </div>
     </div>
-    <div class="max-w-container-max mx-auto px-gutter py-md border-t border-outline-variant/30 text-center md:text-left flex flex-col md:flex-row justify-between items-center gap-base">
-        <p class="text-label-sm font-label-sm text-on-surface-variant">© 2026 Health Haven. All rights reserved. DPA 2024 Compliant.</p>
-        <p class="text-label-sm font-label-sm text-on-surface-variant italic">Health Haven is a marketing and acquisition portal. Clinical services are governed under separate clinical agreements.</p>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-lg">
+      <div class="flex flex-col gap-sm">
+        <p class="text-label-sm font-label-sm font-bold text-primary uppercase">Legal</p>
+        <a class="text-on-surface-variant text-label-sm hover:text-primary transition-colors" href="#privacy">Privacy Policy</a>
+        <a class="text-on-surface-variant text-label-sm hover:text-primary transition-colors" href="#terms">Terms of Service</a>
+        <a class="text-on-surface-variant text-label-sm hover:text-primary transition-colors" href="#dpa">DPA 2024 Compliance</a>
+        <a class="text-on-surface-variant text-label-sm hover:text-primary transition-colors" href="#disclaimer">Medical Disclaimer</a>
+      </div>
+      <div class="flex flex-col gap-sm">
+        <p class="text-label-sm font-label-sm font-bold text-primary uppercase">Platform</p>
+        <a class="text-on-surface-variant text-label-sm hover:text-primary transition-colors" href="index.html">Homepage</a>
+        <a class="text-on-surface-variant text-label-sm hover:text-primary transition-colors" href="customers.html">Customers</a>
+        <a class="text-on-surface-variant text-label-sm hover:text-primary transition-colors" href="packages.html">Packages</a>
+        <a class="text-on-surface-variant text-label-sm hover:text-primary transition-colors" href="business.html">For Business</a>
+        <a class="text-on-surface-variant text-label-sm hover:text-primary transition-colors" href="clinicians.html">For Clinicians</a>
+        <a class="text-on-surface-variant text-label-sm hover:text-primary transition-colors" href="how-it-works.html">How It Works</a>
+      </div>
+      <div class="flex flex-col gap-sm">
+        <p class="text-label-sm font-label-sm font-bold text-primary uppercase">Compliance</p>
+        <p class="text-[10px] text-on-surface-variant">Botswana Health Professions Council Registered</p>
+        <p class="text-[10px] text-on-surface-variant">ISO 27001 Certified Infrastructure</p>
+        <p class="text-[10px] text-on-surface-variant">DPA 2024 Compliant</p>
+        <p class="text-[10px] text-on-surface-variant">Data Protection Officer: <a href="mailto:dpo@healthhaven.co.bw" class="text-primary underline">dpo@healthhaven.co.bw</a></p>
+      </div>
     </div>
+  </div>
+  <div class="max-w-container-max mx-auto px-gutter mt-xl pt-md border-t border-outline-variant/30 flex flex-col md:flex-row justify-between items-center gap-md">
+    <p class="text-label-sm font-label-sm text-on-surface-variant">&copy; 2024 Health Haven. All rights reserved. DPA 2024 Compliant.</p>
+    <div class="flex gap-md items-center">
+      <span class="material-symbols-outlined text-on-surface-variant text-sm">language</span>
+      <span class="text-label-sm font-label-sm text-on-surface-variant">Botswana</span>
+    </div>
+  </div>
 </footer>
 
 <script>
-    // Mobile menu toggle
-    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-    const mobileMenuClose = document.getElementById('mobile-menu-close');
-    const mobileMenu = document.getElementById('mobile-menu');
+// ===== Mobile Menu =====
+const menuToggle = document.getElementById('menu-toggle');
+const menuClose = document.getElementById('menu-close');
+const mobileMenu = document.getElementById('mobile-menu');
+const menuOverlay = document.getElementById('menu-overlay');
+const menuIcon = document.getElementById('menu-icon');
+function openMenu() { mobileMenu.classList.add('open'); menuOverlay.classList.add('open'); menuIcon.textContent = 'close'; document.body.style.overflow = 'hidden'; }
+function closeMenu() { mobileMenu.classList.remove('open'); menuOverlay.classList.remove('open'); menuIcon.textContent = 'menu'; document.body.style.overflow = ''; }
+menuToggle.addEventListener('click', () => mobileMenu.classList.contains('open') ? closeMenu() : openMenu());
+menuClose.addEventListener('click', closeMenu);
+menuOverlay.addEventListener('click', closeMenu);
 
-    if (mobileMenuBtn && mobileMenuClose && mobileMenu) {
-        mobileMenuBtn.addEventListener('click', () => {
-            mobileMenu.classList.remove('translate-x-full');
-        });
-        mobileMenuClose.addEventListener('click', () => {
-            mobileMenu.classList.add('translate-x-full');
-        });
-        mobileMenu.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.add('translate-x-full');
-            });
-        });
-    }
+// ===== TOC Active State on Scroll =====
+const sections = document.querySelectorAll('.legal-section[id]');
+const tocLinks = document.querySelectorAll('.toc-link');
 
-    // Highlighting current section in sidebar on scroll/click
-    const navDisclaimer = document.getElementById('nav-disclaimer');
-    const navPrivacy = document.getElementById('nav-privacy');
-    const navTerms = document.getElementById('nav-terms');
-    const navDpa = document.getElementById('nav-dpa');
-
-    const sections = [
-        { el: document.getElementById('disclaimer'), nav: navDisclaimer },
-        { el: document.getElementById('privacy'), nav: navPrivacy },
-        { el: document.getElementById('terms'), nav: navTerms },
-        { el: document.getElementById('dpa'), nav: navDpa }
-    ];
-
-    function highlightActiveSection() {
-        let activeIndex = 0;
-        const scrollPos = window.scrollY + 150; // offset
-
-        for (let i = 0; i < sections.length; i++) {
-            if (sections[i].el.offsetTop <= scrollPos) {
-                activeIndex = i;
-            }
-        }
-
-        sections.forEach((sec, idx) => {
-            if (idx === activeIndex) {
-                sec.nav.classList.add('text-primary', 'font-semibold', 'bg-primary/5', 'border-l-4', 'border-primary');
-                sec.nav.classList.remove('text-on-surface-variant', 'hover:text-primary', 'hover:bg-surface-variant/50');
-            } else {
-                sec.nav.classList.remove('text-primary', 'font-semibold', 'bg-primary/5', 'border-l-4', 'border-primary');
-                sec.nav.classList.add('text-on-surface-variant', 'hover:text-primary', 'hover:bg-surface-variant/50');
-            }
-        });
-    }
-
-    window.addEventListener('scroll', highlightActiveSection);
-    window.addEventListener('load', highlightActiveSection);
-
-    // Smooth scroll for sidebar links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                target.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            }
-        });
-    });
+function updateActiveToc() {
+  let current = '';
+  sections.forEach(section => {
+    const sectionTop = section.getBoundingClientRect().top;
+    if (sectionTop < 200) current = section.getAttribute('id');
+  });
+  tocLinks.forEach(link => {
+    link.classList.remove('active');
+    if (link.getAttribute('href') === '#' + current) link.classList.add('active');
+  });
+}
+window.addEventListener('scroll', updateActiveToc);
+updateActiveToc();
 </script>
 </body>
 </html>
