@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Health Haven | B2C Individual & Corporate Employees</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Choose your health pathway with Health Haven. Whether you are an individual looking to prevent illness or an employee covered under a corporate wellness plan, we have a clinician-led package for you." />
+    <meta name="keywords" content="Employee wellness Botswana, Health Haven customers, parastatal health coverage Gaborone, personalized medical check" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Source+Serif+4:ital,wght@0,400;0,600;1,400&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .trust-badge {
+            filter: grayscale(1) opacity(0.6);
+            transition: all 0.3s ease;
+        }
+        .trust-badge:hover {
+            filter: grayscale(0) opacity(1);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+    </style>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-fixed-dim": "#f4ba9e",
+                    "on-error-container": "#93000a",
+                    "surface-container-lowest": "#ffffff",
+                    "on-surface-variant": "#404848",
+                    "on-tertiary-container": "#dca389",
+                    "on-tertiary": "#ffffff",
+                    "on-secondary": "#ffffff",
+                    "on-background": "#1a1c1c",
+                    "secondary-container": "#e6e2d8",
+                    "surface-bright": "#f9f9f9",
+                    "primary-fixed": "#bcebeb",
+                    "background": "#f9f9f9",
+                    "outline-variant": "#c0c8c7",
+                    "secondary-fixed-dim": "#cac6bd",
+                    "inverse-surface": "#2e3131",
+                    "surface": "#f9f9f9",
+                    "on-surface": "#1a1c1c",
+                    "on-primary-fixed": "#002020",
+                    "on-secondary-container": "#66645d",
+                    "on-secondary-fixed-variant": "#484740",
+                    "error-container": "#ffdad6",
+                    "secondary": "#605e57",
+                    "tertiary": "#472411",
+                    "tertiary-container": "#613925",
+                    "on-tertiary-fixed": "#311303",
+                    "surface-container-high": "#e8e8e7",
+                    "on-secondary-fixed": "#1c1c16",
+                    "surface-tint": "#386666",
+                    "surface-dim": "#d9dad9",
+                    "primary-container": "#1a4a4a",
+                    "primary": "#003333",
+                    "inverse-primary": "#a0cfcf",
+                    "surface-variant": "#e2e3e2",
+                    "outline": "#707978",
+                    "inverse-on-surface": "#f0f1f0",
+                    "on-error": "#ffffff",
+                    "on-primary": "#ffffff",
+                    "surface-container-highest": "#e2e3e2",
+                    "secondary-fixed": "#e6e2d8",
+                    "on-primary-fixed-variant": "#1e4e4e",
+                    "on-tertiary-fixed-variant": "#653d28",
+                    "surface-container-low": "#f3f4f3",
+                    "on-primary-container": "#8ab9b8",
+                    "surface-container": "#edeeed",
+                    "primary-fixed-dim": "#a0cfcf",
+                    "tertiary-fixed": "#ffdbcc",
+                    "error": "#ba1a1a",
+                    "sunset-gold": "#D4A843"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.5rem",
+                    "lg": "1rem",
+                    "xl": "1.5rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "base": "8px",
+                    "xl": "80px",
+                    "gutter": "24px",
+                    "md": "24px",
+                    "sm": "12px",
+                    "lg": "48px",
+                    "container-max": "1280px",
+                    "margin-mobile": "16px",
+                    "xs": "4px"
+            },
+            "fontFamily": {
+                    "body-md": ["Source Serif 4"],
+                    "label-sm": ["Plus Jakarta Sans"],
+                    "body-lg": ["Source Serif 4"],
+                    "display-lg-mobile": ["Plus Jakarta Sans"],
+                    "headline-sm": ["Plus Jakarta Sans"],
+                    "headline-md": ["Plus Jakarta Sans"],
+                    "display-lg": ["Plus Jakarta Sans"],
+                    "label-md": ["Plus Jakarta Sans"]
+            },
+            "fontSize": {
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "display-lg-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                    "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+</head>
+<body class="bg-background text-on-surface selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopNavBar -->
+<header class="bg-surface/80 backdrop-blur-md shadow-sm fixed top-0 w-full z-50 h-20" id="global-header">
+    <nav class="flex justify-between items-center w-full px-gutter max-w-container-max mx-auto h-full">
+        <a class="text-headline-sm font-headline-sm font-bold text-primary flex items-center gap-xs" href="index.html">
+            <span class="material-symbols-outlined text-primary text-3xl">shield_heart</span>
+            <span>Health Haven</span>
+        </a>
+        <div class="hidden md:flex gap-lg items-center">
+            <a class="text-primary border-b-2 border-primary pb-1 font-label-md" href="customers.html">Customers</a>
+            <a class="text-on-surface-variant font-label-md hover:text-primary transition-colors duration-200" href="packages.html">Packages</a>
+            <a class="text-on-surface-variant font-label-md hover:text-primary transition-colors duration-200" href="business.html">For Business</a>
+            <a class="text-on-surface-variant font-label-md hover:text-primary transition-colors duration-200" href="clinicians.html">For Clinicians</a>
+            <a class="text-on-surface-variant font-label-md hover:text-primary transition-colors duration-200" href="how-it-works.html">How It Works</a>
+        </div>
+        <div class="flex items-center gap-md">
+            <a class="hidden sm:inline-block bg-primary text-on-primary px-lg py-sm rounded-lg font-label-md hover:opacity-90 active:scale-95 transition-all shadow-sm" href="packages.html">
+                Start Free Trial
+            </a>
+            <button class="md:hidden text-primary p-2 focus:outline-none" id="mobile-menu-btn" aria-label="Toggle Menu">
+                <span class="material-symbols-outlined text-2xl">menu</span>
+            </button>
+        </div>
+    </nav>
+</header>
+
+<!-- Mobile Navigation Menu -->
+<div class="fixed inset-0 z-40 bg-surface/98 backdrop-blur-lg flex flex-col justify-center items-center gap-lg transition-transform duration-300 translate-x-full md:hidden" id="mobile-menu">
+    <button class="absolute top-6 right-6 text-primary p-2" id="mobile-menu-close" aria-label="Close Menu">
+        <span class="material-symbols-outlined text-3xl">close</span>
+    </button>
+    <a class="text-headline-sm font-label-md text-primary font-bold" href="customers.html">Customers</a>
+    <a class="text-headline-sm font-label-md text-on-surface-variant hover:text-primary" href="packages.html">Packages</a>
+    <a class="text-headline-sm font-label-md text-on-surface-variant hover:text-primary" href="business.html">For Business</a>
+    <a class="text-headline-sm font-label-md text-on-surface-variant hover:text-primary" href="clinicians.html">For Clinicians</a>
+    <a class="text-headline-sm font-label-md text-on-surface-variant hover:text-primary" href="how-it-works.html">How It Works</a>
+    <a class="px-lg py-md bg-sunset-gold text-primary font-label-md rounded-xl shadow-md hover:shadow-lg mt-md" href="packages.html">Start Free Trial</a>
+</div>
+
+<main class="pt-20">
+    <!-- Hero Section: Individual Journey -->
+    <section class="max-w-container-max mx-auto px-gutter py-xl">
+        <div class="grid md:grid-cols-2 gap-xl items-center">
+            <div class="space-y-md">
+                <span class="inline-block px-sm py-xs bg-primary-fixed text-on-primary-fixed-variant rounded-full font-label-sm text-label-sm">B2C INDIVIDUAL CARE</span>
+                <h1 class="text-display-lg font-display-lg text-primary max-w-xl">Take control of your health journey.</h1>
+                <p class="text-body-lg font-body-lg text-on-surface-variant max-w-lg">
+                    Expert-led prevention, personalized chronic management, and proactive strategies to reverse health decline. We combine Botswana's leading clinicians with precision data to keep you at your best.
+                </p>
+                <div class="flex flex-wrap gap-md pt-base">
+                    <a class="bg-primary text-on-primary px-lg py-md rounded-lg font-label-md flex items-center gap-base hover:shadow-lg transition-all text-center" href="packages.html#quiz">
+                        Find My Package
+                        <span class="material-symbols-outlined">arrow_forward</span>
+                    </a>
+                    <a class="border border-outline text-primary px-lg py-md rounded-lg font-label-md hover:bg-surface-container text-center transition-all" href="packages.html">
+                        View Wellness Plans
+                    </a>
+                </div>
+                <!-- Trust Indicators -->
+                <div class="pt-lg border-t border-outline-variant flex flex-col gap-sm">
+                    <p class="text-label-sm font-label-sm text-secondary">TRUSTED AND COMPLIANT WITH</p>
+                    <div class="flex flex-wrap gap-lg items-center">
+                        <div class="flex items-center gap-xs">
+                            <span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+                            <span class="font-label-md text-label-md font-bold tracking-tight">BQA STANDARD APPROVED</span>
+                        </div>
+                        <div class="flex items-center gap-xs">
+                            <span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">security</span>
+                            <span class="font-label-md text-label-md font-bold tracking-tight text-on-surface-variant">CAAB AUDITED COMPLIANCE</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="relative animate-fade-in">
+                <div class="aspect-square rounded-[32px] overflow-hidden bg-secondary-container">
+                    <img class="w-full h-full object-cover" alt="Professional using Health Tracker in sunny Botswana location" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIAWBoO6bZa1JKsxYc1So3qH-FgF_61VOleIIwn26lc5dshrscaGeYLinLCds6Oo-AxGpCFqUhVlwN6-IBkd5RLUgw5AuLUuU3MlPVRA-3j_8LJmgK-cyHxQF_UIGWqgmW7fTP7DjzpwcJ4ih4DUmiTrZEmKsCdsvzZqlNz45R8RSLEO3pedWdcEYkrYuWiGsjBVGyVySD6WEAeDg7hOhx20m3RGujt_TY2O_3IkUavpHyErvh2k0p04NmS7_qKdLIeu5s_0H28J0N"/>
+                </div>
+                <!-- Floater Card -->
+                <div class="absolute -bottom-8 -left-8 bg-surface p-md rounded-xl shadow-lg border border-outline-variant/30 hidden lg:block max-w-[240px]">
+                    <div class="flex items-center gap-sm mb-sm">
+                        <div class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center">
+                            <span class="material-symbols-outlined text-primary">analytics</span>
+                        </div>
+                        <div>
+                            <p class="text-label-sm font-label-sm text-secondary">Real-time Vitals</p>
+                            <p class="text-label-md font-label-md text-primary">98.4% Health Score</p>
+                        </div>
+                    </div>
+                    <div class="h-2 w-full bg-surface-container-high rounded-full overflow-hidden">
+                        <div class="h-full bg-primary w-4/5"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- B2B2C Section: Corporate Coverage -->
+    <section class="bg-surface-container-low py-xl overflow-hidden">
+        <div class="max-w-container-max mx-auto px-gutter">
+            <div class="flex flex-col md:flex-row justify-between items-end gap-md mb-lg">
+                <div class="space-y-sm">
+                    <span class="text-label-sm font-label-sm text-secondary uppercase tracking-widest">Employee Benefit</span>
+                    <h2 class="text-headline-md font-headline-md text-primary">Already covered by your company?</h2>
+                    <p class="text-body-md font-body-md text-on-surface-variant max-w-xl">
+                        Many Botswana parastatals and corporates now include Health Haven's clinician-led programs in their employee wellness packages.
+                    </p>
+                </div>
+                <button class="bg-primary-container text-on-primary-container px-lg py-sm rounded-lg font-label-md hover:opacity-90 active:scale-95 transition-all shadow-sm shrink-0" id="check-eligibility-btn">
+                    Check Your Eligibility
+                </button>
+            </div>
+            <div class="grid md:grid-cols-3 gap-md">
+                <!-- Step 1 -->
+                <div class="bg-surface p-lg rounded-xl border border-outline-variant/20 hover:shadow-md transition-all group">
+                    <div class="w-12 h-12 rounded-lg bg-surface-container-highest flex items-center justify-center mb-md group-hover:bg-primary transition-colors">
+                        <span class="material-symbols-outlined text-primary group-hover:text-on-primary">fact_check</span>
+                    </div>
+                    <h3 class="text-headline-sm font-headline-sm text-primary mb-xs">01. Check with HR</h3>
+                    <p class="text-body-md font-body-md text-on-surface-variant">Verify if your company offers Health Haven coverage, or enter your work email in our eligibility tool above.</p>
+                </div>
+                <!-- Step 2 -->
+                <div class="bg-surface p-lg rounded-xl border border-outline-variant/20 hover:shadow-md transition-all group">
+                    <div class="w-12 h-12 rounded-lg bg-surface-container-highest flex items-center justify-center mb-md group-hover:bg-primary transition-colors">
+                        <span class="material-symbols-outlined text-primary group-hover:text-on-primary">link</span>
+                    </div>
+                    <h3 class="text-headline-sm font-headline-sm text-primary mb-xs">02. Secure Activation Link</h3>
+                    <p class="text-body-md font-body-md text-on-surface-variant">Check your corporate inbox for a unique activation link sent directly by your HR team.</p>
+                </div>
+                <!-- Step 3 -->
+                <div class="bg-surface p-lg rounded-xl border border-outline-variant/20 hover:shadow-md transition-all group">
+                    <div class="w-12 h-12 rounded-lg bg-surface-container-highest flex items-center justify-center mb-md group-hover:bg-primary transition-colors">
+                        <span class="material-symbols-outlined text-primary group-hover:text-on-primary">install_mobile</span>
+                    </div>
+                    <h3 class="text-headline-sm font-headline-sm text-primary mb-xs">03. Download &amp; Align</h3>
+                    <p class="text-body-md font-body-md text-on-surface-variant">Log in using your link, pair your Withings tracker, and meet your dedicated clinician lead.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials: Dual Perspective -->
+    <section class="max-w-container-max mx-auto px-gutter py-xl">
+        <div class="bg-primary rounded-[40px] p-lg md:p-xl text-on-primary grid md:grid-cols-2 gap-xl relative overflow-hidden">
+            <!-- Background Decoration -->
+            <div class="absolute top-0 right-0 w-64 h-64 bg-primary-container rounded-full blur-[100px] opacity-20 -mr-32 -mt-32"></div>
+            <!-- Testimonial 1 -->
+            <div class="space-y-md relative z-10 border-b md:border-b-0 md:border-r border-on-primary/10 pb-lg md:pb-0 md:pr-xl">
+                <span class="material-symbols-outlined text-on-primary-container text-4xl" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+                <p class="text-body-lg font-body-lg italic opacity-90 leading-relaxed">
+                    "I tried gyms and strict diets, but they didn't work. Mooki gave me a licensed clinician who actually reviewed my biometric data every month. My blood pressure is normal for the first time in 4 years."
+                </p>
+                <div class="flex items-center gap-md">
+                    <div class="w-12 h-12 rounded-full overflow-hidden border-2 border-on-primary/20">
+                        <img class="w-full h-full object-cover" alt="Thabo M. Portrait" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmH3P3c9Gq3g3u-gg2YQyqbw0wFRhFPMJwfHSUj0MxYtQHyTqSDj70nBHqnxcCTGAI89-wuL34d6LTblbiKeVwRJBLY8SDcsylQLFqBLyfN9Ba23QwoyHGIY2wSmye8R_5GB3FIw89wTqovViEDpMqxXzglpR7YRrq2_7bBn_nSPIekRh1IEecudJEavbavyNNZTtBoxzMTzKCR86cBo80HLZd1KndbrCFuuifVSHb69ckkdQ2eu08Qrj0y_m5zlU9fJlXZsimD7zi"/>
+                    </div>
+                    <div>
+                        <p class="font-label-md text-label-md">Thabo, Gaborone</p>
+                        <p class="text-label-sm font-label-sm opacity-60">Individual B2C Subscriber</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Testimonial 2 -->
+            <div class="space-y-md relative z-10">
+                <span class="material-symbols-outlined text-on-primary-container text-4xl" style="font-variation-settings: 'FILL' 1;">corporate_fare</span>
+                <p class="text-body-lg font-body-lg italic opacity-90 leading-relaxed">
+                    "Our workforce wellness programme was collecting dust. Health Haven's aggregated HR dashboard showed us exactly where NCD risks were. Now, over 78% of our parastatal staff are active monthly users."
+                </p>
+                <div class="flex items-center gap-md">
+                    <div class="w-12 h-12 rounded-full overflow-hidden border-2 border-on-primary/20">
+                        <img class="w-full h-full object-cover" alt="HR Manager Portrait" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnhrBd7qUNNHZ_Zy2qn6JwJcJmfw4f0-UXOrRZ7B7khaW5mhyrxhIe0r68WuXLOsbBo0ZE14M2w3pLP3Lk2P0EHjLp3DmryzN0hrbdA5dIetwRWZj-5oHOuZxwv__7pLpY-mEgM2bxYlJjQ7OSM3pshlYEN7MzbUZfUyXIEed2AqHE1Ef0Elr3zzdx8pnmMEWSWw7eeyAJ8c1AZsXzibCq8PpI5d4VV44Gp6RPYAzmId4TA97vkthXDWRNX4zSe1LrJC2II2B691ml"/>
+                    </div>
+                    <div>
+                        <p class="font-label-md text-label-md">HR Director</p>
+                        <p class="text-label-sm font-label-sm opacity-60">Botswana Corporate Client</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="max-w-container-max mx-auto px-gutter py-xl text-center">
+        <h2 class="text-display-lg-mobile md:text-display-lg font-display-lg text-primary mb-md">Ready to prioritize your health?</h2>
+        <p class="text-body-lg font-body-lg text-on-surface-variant max-w-2xl mx-auto mb-lg">
+            Join thousands of Batswana professionals and organizations who have chosen clinician-led care as their standard.
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center gap-md">
+            <a class="bg-primary text-on-primary px-lg py-md rounded-lg font-label-md text-center hover:opacity-95 transition-all shadow-md" href="packages.html">Start Individual Trial</a>
+            <a class="bg-surface-container-highest text-primary px-lg py-md rounded-lg font-label-md text-center hover:bg-surface-variant transition-all" href="business.html">Book Corporate Demo</a>
+        </div>
+    </section>
+</main>
+
+<!-- Corporate Coverage Eligibility Modal (WOW Feature) -->
+<div class="fixed inset-0 z-50 flex items-center justify-center bg-primary/40 backdrop-blur-md hidden transition-all duration-300" id="eligibility-modal" role="dialog" aria-modal="true">
+    <div class="bg-white rounded-2xl max-w-md w-full mx-4 p-lg shadow-2xl border border-outline-variant relative overflow-hidden animate-in fade-in zoom-in-95 duration-200">
+        <button class="absolute top-4 right-4 text-on-surface-variant hover:text-primary" id="modal-close-btn" aria-label="Close Modal">
+            <span class="material-symbols-outlined text-2xl">close</span>
+        </button>
+        <div class="space-y-sm text-center">
+            <span class="material-symbols-outlined text-primary text-4xl">domain</span>
+            <h3 class="font-headline-sm text-headline-sm text-primary">Check Corporate Coverage</h3>
+            <p class="text-label-sm text-on-surface-variant">Enter your work email address below to see if your parastatal or organization has pre-paid corporate coverage.</p>
+        </div>
+        <form class="mt-md space-y-md" id="eligibility-form">
+            <div class="space-y-xs">
+                <label class="font-label-sm text-primary" for="corp-email">Corporate Email Address</label>
+                <input class="w-full bg-white border border-outline/30 rounded-lg p-sm focus:border-primary focus:ring-0 outline-none transition-all text-label-md" id="corp-email" type="email" required placeholder="name@company.bw" />
+            </div>
+            <button class="w-full bg-primary text-on-primary py-md rounded-lg font-label-md hover:opacity-90 active:scale-95 transition-all" type="submit">
+                Check Eligibility
+            </button>
+            <div class="hidden p-sm rounded-lg text-label-sm font-label-sm text-center" id="eligibility-result"></div>
+        </form>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="bg-surface-container-low border-t border-outline-variant">
+    <div class="w-full py-xl px-gutter max-w-container-max mx-auto flex flex-col md:flex-row justify-between gap-md">
+        <div class="space-y-md md:max-w-xs">
+            <a class="text-headline-sm font-headline-sm font-bold text-primary flex items-center gap-xs" href="index.html">
+                <span class="material-symbols-outlined text-primary text-2xl">shield_heart</span>
+                <span>Health Haven</span>
+            </a>
+            <p class="text-body-md font-body-md text-on-surface-variant">Providing clinically guided, culturally localized health journeys for the modern Batswana.</p>
+            <div class="flex gap-md">
+                <a class="text-on-surface-variant hover:text-primary transition-colors" href="https://twitter.com" target="_blank" aria-label="Twitter"><span class="material-symbols-outlined">social_leaderboard</span></a>
+                <a class="text-on-surface-variant hover:text-primary transition-colors" href="mailto:info@healthhaven.co.bw" aria-label="Email"><span class="material-symbols-outlined">alternate_email</span></a>
+                <a class="text-on-surface-variant hover:text-primary transition-colors" href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><span class="material-symbols-outlined">share</span></a>
+            </div>
+        </div>
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-xl">
+            <div class="flex flex-col gap-sm">
+                <span class="font-label-md text-primary">Sitemap</span>
+                <a class="text-on-surface-variant hover:text-primary transition-colors text-label-md" href="index.html">Homepage</a>
+                <a class="text-on-surface-variant hover:text-primary transition-colors text-label-md" href="customers.html">Customers</a>
+                <a class="text-on-surface-variant hover:text-primary transition-colors text-label-md" href="packages.html">Packages</a>
+                <a class="text-on-surface-variant hover:text-primary transition-colors text-label-md" href="business.html">For Business</a>
+                <a class="text-on-surface-variant hover:text-primary transition-colors text-label-md" href="clinicians.html">For Clinicians</a>
+                <a class="text-on-surface-variant hover:text-primary transition-colors text-label-md" href="how-it-works.html">How It Works</a>
+            </div>
+            <div class="flex flex-col gap-sm">
+                <span class="font-label-md text-primary">Compliance &amp; Legal</span>
+                <a class="text-on-surface-variant hover:text-primary transition-colors text-label-md" href="legal.html#privacy">Privacy Policy</a>
+                <a class="text-on-surface-variant hover:text-primary transition-colors text-label-md" href="legal.html#terms">Terms of Service</a>
+                <a class="text-on-surface-variant hover:text-primary transition-colors text-label-md" href="legal.html#dpa">DPA Compliance</a>
+            </div>
+            <div class="flex flex-col gap-sm">
+                <span class="font-label-md text-primary">Authority Info</span>
+                <p class="text-label-sm text-on-surface-variant">Registered BHPC Entity</p>
+                <p class="text-label-sm text-on-surface-variant">DPA Compliant 2024</p>
+                <p class="text-label-sm text-on-surface-variant">Gaborone, Botswana</p>
+            </div>
+        </div>
+    </div>
+    <div class="max-w-container-max mx-auto px-gutter py-md border-t border-outline-variant/30 text-center md:text-left flex flex-col md:flex-row justify-between items-center gap-base">
+        <p class="text-label-sm font-label-sm text-on-surface-variant">© 2026 Health Haven. All rights reserved. DPA 2024 Compliant.</p>
+        <p class="text-label-sm font-label-sm text-on-surface-variant italic">Health Haven is a marketing and acquisition portal. Clinical services are governed under separate clinical agreements.</p>
+    </div>
+</footer>
+
+<script>
+    // Mobile menu toggle
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenuClose = document.getElementById('mobile-menu-close');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    if (mobileMenuBtn && mobileMenuClose && mobileMenu) {
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.remove('translate-x-full');
+        });
+        mobileMenuClose.addEventListener('click', () => {
+            mobileMenu.classList.add('translate-x-full');
+        });
+    }
+
+    // Interactive Modal script
+    const checkEligibilityBtn = document.getElementById('check-eligibility-btn');
+    const modalCloseBtn = document.getElementById('modal-close-btn');
+    const eligibilityModal = document.getElementById('eligibility-modal');
+    const eligibilityForm = document.getElementById('eligibility-form');
+    const eligibilityResult = document.getElementById('eligibility-result');
+    const corpEmailInput = document.getElementById('corp-email');
+
+    if (checkEligibilityBtn && eligibilityModal && modalCloseBtn) {
+        checkEligibilityBtn.addEventListener('click', () => {
+            eligibilityModal.classList.remove('hidden');
+        });
+        modalCloseBtn.addEventListener('click', () => {
+            eligibilityModal.classList.add('hidden');
+            eligibilityResult.classList.add('hidden');
+            eligibilityForm.reset();
+        });
+    }
+
+    if (eligibilityForm) {
+        eligibilityForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const email = corpEmailInput.value.toLowerCase().trim();
+            eligibilityResult.classList.remove('hidden');
+            eligibilityResult.className = "p-sm rounded-lg text-label-sm font-label-sm text-center ";
+
+            // Mock check for parastatal or large corporate domains
+            const approvedDomains = ['@bqa.co.bw', '@caab.co.bw', '@btc.bw', '@debswana.bw', '@gov.bw', '@healthhaven.co.bw'];
+            const hasMatch = approvedDomains.some(domain => email.endsWith(domain));
+
+            if (hasMatch) {
+                eligibilityResult.classList.add('bg-green-100', 'text-green-800');
+                eligibilityResult.innerText = "✓ Coverage active! An activation email was sent to your corporate address with next steps.";
+            } else {
+                eligibilityResult.classList.add('bg-amber-100', 'text-amber-800');
+                eligibilityResult.innerHTML = "⚠ Domain not found on pre-paid list. Contact your HR manager or check with <a href='mailto:info@healthhaven.co.bw' class='underline font-bold'>info@healthhaven.co.bw</a> to request a pilot.";
+            }
+        });
+    }
+
+    // Micro-interaction for B2C buttons
+    document.querySelectorAll('button, a').forEach(button => {
+        button.addEventListener('mouseenter', () => {
+            button.classList.add('scale-[1.02]');
+        });
+        button.addEventListener('mouseleave', () => {
+            button.classList.remove('scale-[1.02]');
+        });
+    });
+
+    // Scroll animation effect
+    document.addEventListener('DOMContentLoaded', () => {
+        const observerOptions = {
+            threshold: 0.05
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        const animatedSections = document.querySelectorAll('section');
+        animatedSections.forEach(section => {
+            section.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-10');
+            observer.observe(section);
+        });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Health Haven | Corporate Wellness & Population Health Solutions</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Transform workforce health from a cost center into a competitive advantage with clinician-led wellness management. Full DPA 2024 compliance, predictive ROI, and biometrics." />
+    <meta name="keywords" content="Corporate wellness programme Gaborone, absenteeism reduction, HR health dashboard Botswana, BHPC certified corporate care" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Source+Serif+4:ital,wght@0,400;0,600;1,400&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+            text-transform: none;
+            letter-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            direction: ltr;
+        }
+        body {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        .bento-cell {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .bento-cell:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px -5px rgba(0, 51, 51, 0.1);
+        }
+        .error-ring {
+            border-color: #ba1a1a !important;
+            box-shadow: 0 0 0 1px #ba1a1a !important;
+        }
+    </style>
+    <script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "tertiary-fixed-dim": "#f4ba9e",
+                      "on-error-container": "#93000a",
+                      "surface-container-lowest": "#ffffff",
+                      "on-surface-variant": "#404848",
+                      "on-tertiary-container": "#dca389",
+                      "on-tertiary": "#ffffff",
+                      "on-secondary": "#ffffff",
+                      "on-background": "#1a1c1c",
+                      "secondary-container": "#e6e2d8",
+                      "surface-bright": "#f9f9f9",
+                      "primary-fixed": "#bcebeb",
+                      "background": "#f9f9f9",
+                      "outline-variant": "#c0c8c7",
+                      "secondary-fixed-dim": "#cac6bd",
+                      "inverse-surface": "#2e3131",
+                      "surface": "#f9f9f9",
+                      "on-surface": "#1a1c1c",
+                      "on-primary-fixed": "#002020",
+                      "on-secondary-container": "#66645d",
+                      "on-secondary-fixed-variant": "#484740",
+                      "error-container": "#ffdad6",
+                      "secondary": "#605e57",
+                      "tertiary": "#472411",
+                      "tertiary-container": "#613925",
+                      "on-tertiary-fixed": "#311303",
+                      "surface-container-high": "#e8e8e7",
+                      "on-secondary-fixed": "#1c1c16",
+                      "surface-tint": "#386666",
+                      "surface-dim": "#d9dad9",
+                      "primary-container": "#1a4a4a",
+                      "primary": "#003333",
+                      "inverse-primary": "#a0cfcf",
+                      "surface-variant": "#e2e3e2",
+                      "outline": "#707978",
+                      "inverse-on-surface": "#f0f1f0",
+                      "on-error": "#ffffff",
+                      "on-primary": "#ffffff",
+                      "surface-container-highest": "#e2e3e2",
+                      "secondary-fixed": "#e6e2d8",
+                      "on-primary-fixed-variant": "#1e4e4e",
+                      "on-tertiary-fixed-variant": "#653d28",
+                      "surface-container-low": "#f3f4f3",
+                      "on-primary-container": "#8ab9b8",
+                      "surface-container": "#edeeed",
+                      "primary-fixed-dim": "#a0cfcf",
+                      "tertiary-fixed": "#ffdbcc",
+                      "error": "#ba1a1a",
+                      "sunset-gold": "#D4A843"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.5rem",
+                      "lg": "1rem",
+                      "xl": "1.5rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "base": "8px",
+                      "xl": "80px",
+                      "gutter": "24px",
+                      "md": "24px",
+                      "sm": "12px",
+                      "lg": "48px",
+                      "container-max": "1280px",
+                      "margin-mobile": "16px",
+                      "xs": "4px"
+              },
+              "fontFamily": {
+                      "body-md": ["Source Serif 4"],
+                      "label-sm": ["Plus Jakarta Sans"],
+                      "body-lg": ["Source Serif 4"],
+                      "display-lg-mobile": ["Plus Jakarta Sans"],
+                      "headline-sm": ["Plus Jakarta Sans"],
+                      "headline-md": ["Plus Jakarta Sans"],
+                      "display-lg": ["Plus Jakarta Sans"],
+                      "label-md": ["Plus Jakarta Sans"]
+              },
+              "fontSize": {
+                      "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                      "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }],
+                      "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                      "display-lg-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                      "headline-sm": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                      "headline-md": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
+                      "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                      "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }]
+              }
+            },
+          },
+        }
+      </script>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+
+<!-- Top Navigation Bar -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-surface/80 backdrop-blur-md shadow-sm transition-all duration-200" id="global-header">
+    <div class="flex justify-between items-center w-full px-gutter max-w-container-max mx-auto h-20">
+        <a class="text-headline-sm font-headline-sm font-bold text-primary flex items-center gap-xs" href="index.html">
+            <span class="material-symbols-outlined text-primary text-3xl">shield_heart</span>
+            <span>Health Haven</span>
+        </a>
+        <nav class="hidden md:flex items-center gap-lg">
+            <a class="text-on-surface-variant font-label-md hover:text-primary transition-colors duration-200" href="customers.html">Customers</a>
+            <a class="text-on-surface-variant font-label-md hover:text-primary transition-colors duration-200" href="packages.html">Packages</a>
+            <a class="text-primary border-b-2 border-primary pb-1 font-label-md" href="business.html">For Business</a>
+            <a class="text-on-surface-variant font-label-md hover:text-primary transition-colors duration-200" href="clinicians.html">For Clinicians</a>
+            <a class="text-on-surface-variant font-label-md hover:text-primary transition-colors duration-200" href="how-it-works.html">How It Works</a>
+        </nav>
+        <div class="flex items-center gap-md">
+            <a class="hidden sm:inline-block px-md py-sm bg-sunset-gold text-primary font-label-md rounded-xl hover:opacity-90 active:scale-95 transition-all" href="packages.html">Start Free Trial</a>
+            <button class="md:hidden text-primary p-2 focus:outline-none" id="mobile-menu-btn" aria-label="Toggle Menu">
+                <span class="material-symbols-outlined text-2xl">menu</span>
+            </button>
+        </div>
+    </div>
+</header>
+
+<!-- Mobile Navigation Menu -->
+<div class="fixed inset-0 z-40 bg-surface/98 backdrop-blur-lg flex flex-col justify-center items-center gap-lg transition-transform duration-300 translate-x-full md:hidden" id="mobile-menu">
+    <button class="absolute top-6 right-6 text-primary p-2" id="mobile-menu-close" aria-label="Close Menu">
+        <span class="material-symbols-outlined text-3xl">close</span>
+    </button>
+    <a class="text-headline-sm font-label-md text-on-surface-variant hover:text-primary" href="customers.html">Customers</a>
+    <a class="text-headline-sm font-label-md text-on-surface-variant hover:text-primary" href="packages.html">Packages</a>
+    <a class="text-headline-sm font-label-md text-primary font-bold" href="business.html">For Business</a>
+    <a class="text-headline-sm font-label-md text-on-surface-variant hover:text-primary" href="clinicians.html">For Clinicians</a>
+    <a class="text-headline-sm font-label-md text-on-surface-variant hover:text-primary" href="how-it-works.html">How It Works</a>
+    <a class="px-lg py-md bg-sunset-gold text-primary font-label-md rounded-xl shadow-md hover:shadow-lg mt-md" href="packages.html">Start Free Trial</a>
+</div>
+
+<main class="pt-20">
+    <!-- Hero Section -->
+    <section class="relative min-h-[640px] md:min-h-[720px] flex items-center overflow-hidden py-xl">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-gradient-to-r from-background via-background/90 to-transparent z-10"></div>
+            <img alt="Corporate Office" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtPqDbTjuzQrT5-2yDP6F5LklPjgoU8pmgt7Ko5hh98cpNn6UuQeyQKtVBiDQ-1Y0guU4ZHUBKSX8MOxHV3auMNebTqXmyck-dtowimPpZLHYAVgEW5fGcIbU1D6UhjBqAkWLIIwCIp637hCQ-lXWc2UzCTjFxJNCpmDL22YL8YOciCloOJxA2H3-ih5lKqm7kFPSGS2AcPLTuJMABq66r-rbfz0IY3ZIGgKLR4T-T9ewSf-Mzc6vzsHK2yOK98TwFCpLoL7aYv6rr"/>
+        </div>
+        <div class="relative z-20 px-gutter max-w-container-max mx-auto w-full">
+            <div class="max-w-2xl space-y-md">
+                <span class="inline-block px-sm py-xs bg-primary-container text-on-primary-container rounded-full font-label-sm text-label-sm">HEALTH HAVEN FOR BUSINESS</span>
+                <h1 class="text-display-lg-mobile md:text-display-lg font-display-lg leading-tight text-primary">
+                    Reduce absenteeism.<br/>
+                    Improve productivity.<br/>
+                    Prove ROI.
+                </h1>
+                <p class="text-body-lg font-body-lg text-on-surface-variant max-w-lg italic">
+                    Transform your workforce health from a cost center into a competitive advantage with clinician-led wellness management.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-md pt-sm">
+                    <a class="bg-primary text-on-primary px-lg py-md rounded-xl font-label-md text-center hover:opacity-95 transition-all shadow-md active:scale-[0.98]" href="#lead-form">
+                        Request a 30-Day Corporate Pilot
+                    </a>
+                    <button class="flex items-center justify-center gap-sm px-lg py-md rounded-xl border border-outline text-primary font-label-md hover:bg-surface-variant transition-colors" onclick="alert('The ROI Framework document has been queued for download.')">
+                        <span class="material-symbols-outlined">analytics</span>
+                        Download ROI Framework
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Problem: Quote Section -->
+    <section class="py-xl bg-surface-container-low border-y border-outline-variant/30">
+        <div class="px-gutter max-w-container-max mx-auto">
+            <div class="max-w-4xl mx-auto text-center">
+                <span class="material-symbols-outlined text-primary text-5xl mb-md">format_quote</span>
+                <h2 class="text-display-lg-mobile md:text-headline-md font-headline-md italic font-normal text-primary mb-lg leading-normal">
+                    "Fragmented wellness programs are failing Botswana's workforce. With nearly 30% of employees carrying undiagnosed hypertension, the hidden cost of reactive care is paralyzing modern enterprise growth."
+                </h2>
+                <div class="flex flex-col items-center">
+                    <div class="w-16 h-1 bg-tertiary-fixed-dim mb-md"></div>
+                    <p class="font-label-md text-primary tracking-widest uppercase">Clinical Insight Report 2024</p>
+                    <p class="text-on-surface-variant font-label-sm">The State of Corporate Health in SADC</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Solution: Bento Grid -->
+    <section class="py-xl bg-surface">
+        <div class="px-gutter max-w-container-max mx-auto">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-lg gap-md">
+                <div class="max-w-2xl">
+                    <h3 class="text-headline-md font-headline-md text-primary mb-sm">The Unified Wellness Infrastructure</h3>
+                    <p class="text-on-surface-variant font-body-lg">Moving beyond step-counters to clinical-grade population health management.</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-md">
+                <!-- Dashboard -->
+                <div class="col-span-12 md:col-span-8 bg-white rounded-xl p-lg border border-outline-variant/20 shadow-sm overflow-hidden relative group bento-cell">
+                    <div class="flex flex-col h-full">
+                        <h4 class="text-headline-sm font-headline-sm text-primary mb-sm">Aggregated HR Dashboard</h4>
+                        <p class="text-on-surface-variant mb-lg">Monitor organizational health trends, risk clusters, and engagement ROI in real-time. Full GDPR &amp; DPA compliance guaranteed.</p>
+                        <div class="mt-auto relative rounded-lg overflow-hidden">
+                            <img alt="Health Dashboard" class="w-full h-auto rounded-lg shadow-lg group-hover:scale-[1.02] transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcVqOivXGLJWyZdxPR2hnvIBWngI-oIjNGktScq1xL9Q5XAp7H7nSkOP90zdsLybUN6ytOYdYbm0xlUkoS9E7dbWDHsPx2TQJuyHIAgrzQkpNh4sMLw_LZ3qvMN3oHB8n_iggkeOBDghb3rET7HtfuLS_T7jiphfFoInL8J-X8-gzwh-zanw0YfRZpvu9FEnBdkW0WyTuQWVoV2PeyuuwWueJhkOSbdaMiD6XSicFnDLsRd2u7AKyGhSphhZzYwtlSQGqFdM7Qabgv"/>
+                        </div>
+                    </div>
+                </div>
+                <!-- Health Reports -->
+                <div class="col-span-12 md:col-span-4 bg-secondary-container rounded-xl p-lg flex flex-col justify-between border border-outline-variant/20 bento-cell">
+                    <div>
+                        <span class="material-symbols-outlined text-primary text-4xl mb-md">description</span>
+                        <h4 class="text-headline-sm font-headline-sm text-primary mb-sm">Predictive Reporting</h4>
+                        <p class="text-on-secondary-container mb-md">Quarterly health audits that identify rising risks before they become insurance claims.</p>
+                    </div>
+                    <div class="mt-md pt-md border-t border-on-secondary-container/10">
+                        <ul class="space-y-sm">
+                            <li class="flex items-center gap-xs font-label-md text-primary">
+                                <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                                Chronic Risk Heatmaps
+                            </li>
+                            <li class="flex items-center gap-xs font-label-md text-primary">
+                                <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                                Mental Wellbeing Index
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Onsite Screening -->
+                <div class="col-span-12 md:col-span-4 bg-primary text-on-primary rounded-xl p-lg flex flex-col justify-center text-center bento-cell">
+                    <span class="material-symbols-outlined text-5xl mb-md text-inverse-primary">medical_services</span>
+                    <h4 class="text-headline-sm font-headline-sm mb-sm text-white">Onsite Clinical Screening</h4>
+                    <p class="text-on-primary/80 mb-md">Professional nurses deployed to your office for biometrics, vaccinations, and screenings.</p>
+                    <a class="bg-white text-primary px-md py-sm rounded-lg font-label-md mx-auto hover:bg-white/90 transition-colors inline-block" href="#lead-form">Learn More</a>
+                </div>
+                <!-- Custom Programs -->
+                <div class="col-span-12 md:col-span-8 bg-surface-container-highest rounded-xl p-lg border border-outline-variant/20 flex flex-col md:flex-row gap-lg items-center bento-cell">
+                    <div class="flex-1 space-y-sm">
+                        <h4 class="text-headline-sm font-headline-sm text-primary">Custom Wellness Programs</h4>
+                        <p class="text-on-surface-variant">Tailored initiatives for stress management, ergonomic health, and nutritional guidance based on your specific workforce demographic.</p>
+                        <div class="flex flex-wrap gap-sm pt-xs">
+                            <span class="px-sm py-1 bg-white rounded-full text-label-sm border border-outline-variant">Gaborone Teams</span>
+                            <span class="px-sm py-1 bg-white rounded-full text-label-sm border border-outline-variant">Remote Workers</span>
+                            <span class="px-sm py-1 bg-white rounded-full text-label-sm border border-outline-variant">Industrial Sites</span>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/3 rounded-lg overflow-hidden shadow-sm">
+                        <img alt="Custom Wellness" class="w-full h-48 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaoQi5_dhTh2YjjfuY63_QAvtrm_w73MgTy7jNjOaKAdKSWTeVD2bUezIHbYdwD5uHTX9a-7SoGAJef0uZL2_pl34HYNSNffMUfuVtJopHnKva5zTuju2UFcK7lTd_JNiTe2jC3It7jzzuSJe8o4Lu84uPkQGg6ZIzL8xgIqOERirVskjhbHHXbgJziebpV9rLPWezVKcasuNA_Ai9ROEY3bpDApydVleQ_u9ScETR7PZjb-b5CsbEl1neXOayXByGEvGYQofnf19J"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="py-xl bg-surface-container-low">
+        <div class="px-gutter max-w-container-max mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-lg">
+                <h3 class="text-headline-md font-headline-md text-primary mb-sm">Scalable Investment</h3>
+                <p class="text-on-surface-variant">Transparent pricing designed to grow with your organization.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-lg pt-4">
+                <!-- Basic -->
+                <div class="bg-white p-lg rounded-2xl border border-outline-variant shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+                    <div>
+                        <h5 class="font-label-md text-primary mb-xs">FOUNDATION</h5>
+                        <div class="flex items-baseline gap-xs mb-md">
+                            <span class="text-headline-md font-bold text-primary">P45</span>
+                            <span class="text-on-surface-variant font-label-sm">/ employee / mo</span>
+                        </div>
+                        <p class="text-on-surface-variant text-body-md mb-lg">Essential tracking and automated health alerts for small to mid-sized firms.</p>
+                        <ul class="space-y-sm mb-lg">
+                            <li class="flex items-center gap-sm text-sm text-on-surface-variant"><span class="material-symbols-outlined text-primary text-lg">check</span> Employee App Access</li>
+                            <li class="flex items-center gap-sm text-sm text-on-surface-variant"><span class="material-symbols-outlined text-primary text-lg">check</span> Basic HR Dashboard</li>
+                            <li class="flex items-center gap-sm text-sm text-on-surface-variant/40"><span class="material-symbols-outlined text-lg">close</span> Onsite Screenings</li>
+                        </ul>
+                    </div>
+                    <a class="w-full py-sm border border-primary text-primary text-center rounded-xl font-label-md hover:bg-primary/5 transition-colors block" href="#lead-form">Choose Foundation</a>
+                </div>
+                <!-- Recommended -->
+                <div class="bg-primary text-on-primary p-lg rounded-2xl shadow-xl border-2 border-primary-container relative flex flex-col justify-between scale-105 z-10">
+                    <div class="absolute top-0 right-lg -translate-y-1/2 bg-sunset-gold text-primary px-sm py-xs rounded-full text-[10px] font-bold tracking-widest">MOST POPULAR</div>
+                    <div>
+                        <h5 class="font-label-md text-sunset-gold mb-xs">ENTERPRISE CORE</h5>
+                        <div class="flex items-baseline gap-xs mb-md">
+                            <span class="text-headline-md font-bold text-white">P120</span>
+                            <span class="text-on-primary/60 font-label-sm">/ employee / mo</span>
+                        </div>
+                        <p class="text-on-primary/80 text-body-md mb-lg">Full clinical integration including biannual onsite screenings and nurse triage.</p>
+                        <ul class="space-y-sm mb-lg">
+                            <li class="flex items-center gap-sm text-sm text-white"><span class="material-symbols-outlined text-sunset-gold text-lg">check</span> All Foundation Features</li>
+                            <li class="flex items-center gap-sm text-sm text-white"><span class="material-symbols-outlined text-sunset-gold text-lg">check</span> 2x Onsite Screenings/Year</li>
+                            <li class="flex items-center gap-sm text-sm text-white"><span class="material-symbols-outlined text-sunset-gold text-lg">check</span> Advanced Predictive ROI Reports</li>
+                        </ul>
+                    </div>
+                    <a class="w-full py-sm bg-sunset-gold text-primary text-center rounded-xl font-label-md hover:bg-sunset-gold/90 transition-all block" href="#lead-form">Request Enterprise Pilot</a>
+                </div>
+                <!-- Pilot -->
+                <div class="bg-white p-lg rounded-2xl border border-outline-variant shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+                    <div>
+                        <h5 class="font-label-md text-primary mb-xs">30-DAY PILOT</h5>
+                        <div class="flex items-baseline gap-xs mb-md">
+                            <span class="text-headline-md font-bold text-primary">P0</span>
+                            <span class="text-on-surface-variant font-label-sm">/ for 100 users</span>
+                        </div>
+                        <p class="text-on-surface-variant text-body-md mb-lg">Test our dashboard and limited app features with a select department for free.</p>
+                        <ul class="space-y-sm mb-lg">
+                            <li class="flex items-center gap-sm text-sm text-on-surface-variant"><span class="material-symbols-outlined text-primary text-lg">check</span> Department Trial Access</li>
+                            <li class="flex items-center gap-sm text-sm text-on-surface-variant"><span class="material-symbols-outlined text-primary text-lg">check</span> Initial Risk Audit</li>
+                            <li class="flex items-center gap-sm text-sm text-on-surface-variant"><span class="material-symbols-outlined text-primary text-lg">check</span> Implementation Roadmap</li>
+                        </ul>
+                    </div>
+                    <a class="w-full py-sm border border-primary text-primary text-center rounded-xl font-label-md hover:bg-primary/5 transition-colors block" href="#lead-form">Start Free Pilot</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lead Form Section -->
+    <section class="py-xl bg-white relative overflow-hidden" id="lead-form">
+        <div class="absolute bottom-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl -mb-48 -mr-48"></div>
+        <div class="px-gutter max-w-container-max mx-auto relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-xl items-start">
+                <div class="space-y-md">
+                    <h3 class="text-display-lg-mobile md:text-display-lg font-display-lg text-primary leading-tight">Scale Health with Confidence</h3>
+                    <p class="text-body-lg text-on-surface-variant max-w-md italic">Our clinical leads will reach out within 24 hours to schedule a deep-dive health audit for your organization.</p>
+                    <div class="space-y-md pt-sm">
+                        <div class="flex items-start gap-md">
+                            <div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary shrink-0">
+                                <span class="material-symbols-outlined">security</span>
+                            </div>
+                            <div>
+                                <h6 class="font-label-md text-primary">Data Privacy First</h6>
+                                <p class="text-sm text-on-surface-variant">We are DPA 2024 compliant, ensuring employee medical data is never shared with management.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-md">
+                            <div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary shrink-0">
+                                <span class="material-symbols-outlined">clinical_notes</span>
+                            </div>
+                            <div>
+                                <h6 class="font-label-md text-primary">Clinician-Led Support</h6>
+                                <p class="text-sm text-on-surface-variant">Not just software. We provide human medical expertise to guide your HR strategy.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-surface-container-low p-lg rounded-2xl border border-outline-variant shadow-lg" id="form-container">
+                    <form id="b2b-lead-form" class="space-y-md" novalidate>
+                        <!-- Form Error Header -->
+                        <div id="form-error-header" class="hidden bg-red-50 border-l-4 border-red-500 p-sm rounded text-red-700 text-sm">
+                            Please correct the highlighted fields below.
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-md">
+                            <div class="space-y-xs">
+                                <label class="font-label-sm text-primary block" for="full-name">Full Name *</label>
+                                <input class="w-full bg-white border border-outline/20 rounded-lg p-sm focus:border-primary focus:ring-0 outline-none transition-all" id="full-name" placeholder="Sarah Motsumi" type="text" required/>
+                                <span class="text-xs text-red-600 hidden" id="name-error">Name must be at least 2 characters.</span>
+                            </div>
+                            <div class="space-y-xs">
+                                <label class="font-label-sm text-primary block" for="work-email">Work Email *</label>
+                                <input class="w-full bg-white border border-outline/20 rounded-lg p-sm focus:border-primary focus:ring-0 outline-none transition-all" id="work-email" placeholder="sarah@corp.bw" type="email" required/>
+                                <span class="text-xs text-red-600 hidden" id="email-error">Enter a valid work email address.</span>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-md">
+                            <div class="space-y-xs">
+                                <label class="font-label-sm text-primary block" for="company-name">Company Name *</label>
+                                <input class="w-full bg-white border border-outline/20 rounded-lg p-sm focus:border-primary focus:ring-0 outline-none transition-all" id="company-name" placeholder="Blue Chip Mining" type="text" required/>
+                                <span class="text-xs text-red-600 hidden" id="company-error">Company name is required.</span>
+                            </div>
+                            <div class="space-y-xs">
+                                <label class="font-label-sm text-primary block" for="job-title">Job Title *</label>
+                                <input class="w-full bg-white border border-outline/20 rounded-lg p-sm focus:border-primary focus:ring-0 outline-none transition-all" id="job-title" placeholder="HR Director" type="text" required/>
+                                <span class="text-xs text-red-600 hidden" id="job-error">Job title is required.</span>
+                            </div>
+                        </div>
+                        <div class="space-y-xs">
+                            <label class="font-label-sm text-primary block" for="employee-size">Number of Employees</label>
+                            <select class="w-full bg-white border border-outline/20 rounded-lg p-sm focus:border-primary focus:ring-0 outline-none transition-all bg-white" id="employee-size">
+                                <option value="1-50">1-50 employees</option>
+                                <option value="51-250">51-250 employees</option>
+                                <option value="251-1000">251-1000 employees</option>
+                                <option value="1000+">1000+ employees</option>
+                            </select>
+                        </div>
+                        <div class="space-y-xs">
+                            <label class="font-label-sm text-primary block" for="message">How can we help your team? *</label>
+                            <textarea class="w-full bg-white border border-outline/20 rounded-lg p-sm focus:border-primary focus:ring-0 outline-none transition-all" id="message" placeholder="Tell us about your current wellness goals..." rows="4" required></textarea>
+                            <span class="text-xs text-red-600 hidden" id="message-error">Please explain your wellness goals (minimum 10 characters).</span>
+                        </div>
+                        <button class="w-full bg-primary text-on-primary py-md rounded-xl font-headline-sm hover:opacity-90 active:scale-95 transition-all flex items-center justify-center gap-sm" type="submit" id="submit-btn">
+                            <span>Request Pilot Details</span>
+                        </button>
+                        <p class="text-[10px] text-center text-on-surface-variant mt-2 leading-relaxed">
+                            By submitting this form, you agree to our Privacy Policy and DPA Compliance terms. Your data is encrypted and handled under DPA 2024 guidelines.
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-surface-container-low border-t border-outline-variant">
+    <div class="w-full py-xl px-gutter max-w-container-max mx-auto flex flex-col md:flex-row justify-between gap-md">
+        <div class="space-y-md md:max-w-xs">
+            <a class="text-headline-sm font-headline-sm font-bold text-primary flex items-center gap-xs" href="index.html">
+                <span class="material-symbols-outlined text-primary text-2xl">shield_heart</span>
+                <span>Health Haven</span>
+            </a>
+            <p class="text-body-md font-body-md text-on-surface-variant">Providing clinically guided, culturally localized health journeys for the modern Batswana.</p>
+            <div class="flex gap-md">
+                <a class="text-on-surface-variant hover:text-primary transition-colors" href="https://twitter.com" target="_blank" aria-label="Twitter"><span class="material-symbols-outlined">social_leaderboard</span></a>
+                <a class="text-on-surface-variant hover:text-primary transition-colors" href="mailto:info@healthhaven.co.bw" aria-label="Email"><span class="material-symbols-outlined">alternate_email</span></a>
+                <a class="text-on-surface-variant hover:text-primary transition-colors" href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><span class="material-symbols-outlined">share</span></a>
+            </div>
+        </div>
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-xl">
+            <div class="flex flex-col gap-sm">
+                <span class="font-label-md text-primary">Sitemap</span>
+                <a class="text-on-surface-variant hover:text-primary transition-colors text-label-md" href="customers.html">Customers</a>
+                <a class="text-on-surface-variant hover:text-primary transition-colors text-label-md" href="packages.html">Packages</a>
+                <a class="text-on-surface-variant hover:text-primary transition-colors text-label-md" href="business.html">For Business</a>
+            </div>
+            <div class="flex flex-col gap-sm">
+                <span class="font-label-md text-primary">Compliance &amp; Legal</span>
+                <a class="text-on-surface-variant hover:text-primary transition-colors text-label-md" href="legal.html#privacy">Privacy Policy</a>
+                <a class="text-on-surface-variant hover:text-primary transition-colors text-label-md" href="legal.html#terms">Terms of Service</a>
+                <a class="text-on-surface-variant hover:text-primary transition-colors text-label-md" href="legal.html#dpa">DPA Compliance</a>
+            </div>
+            <div class="flex flex-col gap-sm">
+                <span class="font-label-md text-primary">Authority Info</span>
+                <p class="text-label-sm text-on-surface-variant">Registered BHPC Entity</p>
+                <p class="text-label-sm text-on-surface-variant">DPA Compliant 2024</p>
+                <p class="text-label-sm text-on-surface-variant">Gaborone, Botswana</p>
+            </div>
+        </div>
+    </div>
+    <div class="max-w-container-max mx-auto px-gutter py-md border-t border-outline-variant/30 text-center md:text-left flex flex-col md:flex-row justify-between items-center gap-base">
+        <p class="text-label-sm font-label-sm text-on-surface-variant">© 2026 Health Haven. All rights reserved. DPA 2024 Compliant.</p>
+        <p class="text-label-sm font-label-sm text-on-surface-variant italic">Health Haven is a marketing and acquisition portal. Clinical services are governed under separate clinical agreements.</p>
+    </div>
+</footer>
+
+<script>
+    // Mobile menu toggle
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenuClose = document.getElementById('mobile-menu-close');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    if (mobileMenuBtn && mobileMenuClose && mobileMenu) {
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.remove('translate-x-full');
+        });
+        mobileMenuClose.addEventListener('click', () => {
+            mobileMenu.classList.add('translate-x-full');
+        });
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('translate-x-full');
+            });
+        });
+    }
+
+    // Scroll animation effect
+    document.addEventListener('DOMContentLoaded', () => {
+        const observerOptions = {
+            threshold: 0.05
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        const animatedSections = document.querySelectorAll('section');
+        animatedSections.forEach(section => {
+            section.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-10');
+            observer.observe(section);
+        });
+    });
+
+    // Form Custom Validation & Breeze CRM Simulation
+    const leadForm = document.getElementById('b2b-lead-form');
+    const formContainer = document.getElementById('form-container');
+    const formErrorHeader = document.getElementById('form-error-header');
+
+    if (leadForm) {
+        leadForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            // Inputs
+            const nameInput = document.getElementById('full-name');
+            const emailInput = document.getElementById('work-email');
+            const companyInput = document.getElementById('company-name');
+            const jobInput = document.getElementById('job-title');
+            const sizeInput = document.getElementById('employee-size');
+            const messageInput = document.getElementById('message');
+
+            // Errors
+            const nameError = document.getElementById('name-error');
+            const emailError = document.getElementById('email-error');
+            const companyError = document.getElementById('company-error');
+            const jobError = document.getElementById('job-error');
+            const messageError = document.getElementById('message-error');
+
+            let isValid = true;
+
+            // Reset States
+            [nameInput, emailInput, companyInput, jobInput, messageInput].forEach(inp => inp.classList.remove('error-ring'));
+            [nameError, emailError, companyError, jobError, messageError].forEach(err => err.classList.add('hidden'));
+            formErrorHeader.classList.add('hidden');
+
+            // Validate Name
+            if (nameInput.value.trim().length < 2) {
+                nameInput.classList.add('error-ring');
+                nameError.classList.remove('hidden');
+                isValid = false;
+            }
+
+            // Validate Email
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailPattern.test(emailInput.value.trim())) {
+                emailInput.classList.add('error-ring');
+                emailError.classList.remove('hidden');
+                isValid = false;
+            }
+
+            // Validate Company
+            if (companyInput.value.trim().length === 0) {
+                companyInput.classList.add('error-ring');
+                companyError.classList.remove('hidden');
+                isValid = false;
+            }
+
+            // Validate Job
+            if (jobInput.value.trim().length === 0) {
+                jobInput.classList.add('error-ring');
+                jobError.classList.remove('hidden');
+                isValid = false;
+            }
+
+            // Validate Message
+            if (messageInput.value.trim().length < 10) {
+                messageInput.classList.add('error-ring');
+                messageError.classList.remove('hidden');
+                isValid = false;
+            }
+
+            if (!isValid) {
+                formErrorHeader.classList.remove('hidden');
+                formErrorHeader.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                return;
+            }
+
+            // Submit Simulation (Breeze CRM)
+            const submitBtn = document.getElementById('submit-btn');
+            const originalBtnContent = submitBtn.innerHTML;
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = `
+                <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                </svg>
+                <span>Logging in Breeze CRM...</span>
+            `;
+
+            setTimeout(() => {
+                // Success State!
+                formContainer.innerHTML = `
+                    <div class="text-center py-lg px-md space-y-md animate-fade-in">
+                        <div class="w-16 h-16 bg-primary/10 text-primary rounded-full flex items-center justify-center mx-auto mb-md">
+                            <span class="material-symbols-outlined text-[40px]">check_circle</span>
+                        </div>
+                        <h4 class="text-headline-sm font-headline-sm text-primary">Inquiry Successfully Logged</h4>
+                        <p class="text-body-md text-on-surface-variant max-w-sm mx-auto">
+                            Thank you, <strong>Dr./Mr./Ms. ${nameInput.value.trim()}</strong>. Your pilot request for <strong>${companyInput.value.trim()}</strong> (${sizeInput.value} employees) has been recorded in our <strong>Breeze CRM</strong> database.
+                        </p>
+                        <div class="bg-primary/5 p-sm rounded-lg border border-primary/10 text-label-sm text-primary max-w-sm mx-auto">
+                            <span class="font-bold">Lead ID:</span> HH-B2B-${Math.floor(1000 + Math.random() * 9000)} | Assigned to Clinical Lead
+                        </div>
+                        <p class="text-sm text-on-surface-variant pt-2">
+                            A Health Haven clinical coordinator will reach out to you at <strong>${emailInput.value.trim()}</strong> within 24 hours to schedule your Deep-Dive Health Audit.
+                        </p>
+                        <div class="pt-md">
+                            <button onclick="window.location.reload()" class="bg-primary text-on-primary px-lg py-md rounded-xl font-label-md hover:opacity-90 transition-all inline-block shadow-sm">
+                                Submit Another Request
+                            </button>
+                        </div>
+                    </div>
+                `;
+            }, 1800);
+        });
+    }
+</script>
+</body>
+</html>

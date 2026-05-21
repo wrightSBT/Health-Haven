@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Health Haven | Personalized Clinician-Led Health Journeys</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Health Haven is Botswana's premier clinician-led, culturally localized health platform. Bridge clinical expertise with modern technology to prevent, manage, and reverse chronic conditions." />
+    <meta name="keywords" content="Hypertension management Botswana, Corporate wellness programme Gaborone, NCD prevention platform, Health Haven, medical care Botswana" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Source+Serif+4:ital,wght@0,400;0,600;1,400&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+            text-transform: none;
+            letter-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            direction: ltr;
+        }
+        body {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        .bento-cell {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .bento-cell:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px -5px rgba(0, 51, 51, 0.1);
+        }
+    </style>
+    <script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "tertiary-fixed-dim": "#f4ba9e",
+                      "on-error-container": "#93000a",
+                      "surface-container-lowest": "#ffffff",
+                      "on-surface-variant": "#404848",
+                      "on-tertiary-container": "#dca389",
+                      "on-tertiary": "#ffffff",
+                      "on-secondary": "#ffffff",
+                      "on-background": "#1a1c1c",
+                      "secondary-container": "#e6e2d8",
+                      "surface-bright": "#f9f9f9",
+                      "primary-fixed": "#bcebeb",
+                      "background": "#f9f9f9",
+                      "outline-variant": "#c0c8c7",
+                      "secondary-fixed-dim": "#cac6bd",
+                      "inverse-surface": "#2e3131",
+                      "surface": "#f9f9f9",
+                      "on-surface": "#1a1c1c",
+                      "on-primary-fixed": "#002020",
+                      "on-secondary-container": "#66645d",
+                      "on-secondary-fixed-variant": "#484740",
+                      "error-container": "#ffdad6",
+                      "secondary": "#605e57",
+                      "tertiary": "#472411",
+                      "tertiary-container": "#613925",
+                      "on-tertiary-fixed": "#311303",
+                      "surface-container-high": "#e8e8e7",
+                      "on-secondary-fixed": "#1c1c16",
+                      "surface-tint": "#386666",
+                      "surface-dim": "#d9dad9",
+                      "primary-container": "#1a4a4a",
+                      "primary": "#003333",
+                      "inverse-primary": "#a0cfcf",
+                      "surface-variant": "#e2e3e2",
+                      "outline": "#707978",
+                      "inverse-on-surface": "#f0f1f0",
+                      "on-error": "#ffffff",
+                      "on-primary": "#ffffff",
+                      "surface-container-highest": "#e2e3e2",
+                      "secondary-fixed": "#e6e2d8",
+                      "on-primary-fixed-variant": "#1e4e4e",
+                      "on-tertiary-fixed-variant": "#653d28",
+                      "surface-container-low": "#f3f4f3",
+                      "on-primary-container": "#8ab9b8",
+                      "surface-container": "#edeeed",
+                      "primary-fixed-dim": "#a0cfcf",
+                      "tertiary-fixed": "#ffdbcc",
+                      "error": "#ba1a1a",
+                      "sunset-gold": "#D4A843"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.5rem",
+                      "lg": "1rem",
+                      "xl": "1.5rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "base": "8px",
+                      "xl": "80px",
+                      "gutter": "24px",
+                      "md": "24px",
+                      "sm": "12px",
+                      "lg": "48px",
+                      "container-max": "1280px",
+                      "margin-mobile": "16px",
+                      "xs": "4px"
+              },
+              "fontFamily": {
+                      "body-md": ["Source Serif 4"],
+                      "label-sm": ["Plus Jakarta Sans"],
+                      "body-lg": ["Source Serif 4"],
+                      "display-lg-mobile": ["Plus Jakarta Sans"],
+                      "headline-sm": ["Plus Jakarta Sans"],
+                      "headline-md": ["Plus Jakarta Sans"],
+                      "display-lg": ["Plus Jakarta Sans"],
+                      "label-md": ["Plus Jakarta Sans"]
+              },
+              "fontSize": {
+                      "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                      "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }],
+                      "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                      "display-lg-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                      "headline-sm": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                      "headline-md": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
+                      "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                      "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }]
+              }
+            },
+          },
+        }
+      </script>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- Top Navigation Bar -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-surface/80 backdrop-blur-md shadow-sm transition-all duration-200" id="global-header">
+    <div class="flex justify-between items-center w-full px-gutter max-w-container-max mx-auto h-20">
+        <a class="text-headline-sm font-headline-sm font-bold text-primary flex items-center gap-xs" href="index.html">
+            <span class="material-symbols-outlined text-primary text-3xl">shield_heart</span>
+            <span>Health Haven</span>
+        </a>
+        <nav class="hidden md:flex items-center gap-lg">
+            <a class="text-on-surface-variant font-label-md hover:text-primary transition-colors duration-200" href="customers.html">Customers</a>
+            <a class="text-on-surface-variant font-label-md hover:text-primary transition-colors duration-200" href="packages.html">Packages</a>
+            <a class="text-on-surface-variant font-label-md hover:text-primary transition-colors duration-200" href="business.html">For Business</a>
+            <a class="text-on-surface-variant font-label-md hover:text-primary transition-colors duration-200" href="clinicians.html">For Clinicians</a>
+            <a class="text-on-surface-variant font-label-md hover:text-primary transition-colors duration-200" href="how-it-works.html">How It Works</a>
+        </nav>
+        <div class="flex items-center gap-md">
+            <a class="hidden sm:inline-block px-md py-sm bg-sunset-gold text-primary font-label-md rounded-xl hover:opacity-90 active:scale-95 transition-all" href="packages.html">Start Free Trial</a>
+            <button class="md:hidden text-primary p-2 focus:outline-none" id="mobile-menu-btn" aria-label="Toggle Menu">
+                <span class="material-symbols-outlined text-2xl">menu</span>
+            </button>
+        </div>
+    </div>
+</header>
+
+<!-- Mobile Navigation Menu -->
+<div class="fixed inset-0 z-40 bg-surface/98 backdrop-blur-lg flex flex-col justify-center items-center gap-lg transition-transform duration-300 translate-x-full md:hidden" id="mobile-menu">
+    <button class="absolute top-6 right-6 text-primary p-2" id="mobile-menu-close" aria-label="Close Menu">
+        <span class="material-symbols-outlined text-3xl">close</span>
+    </button>
+    <a class="text-headline-sm font-label-md text-on-surface-variant hover:text-primary" href="customers.html">Customers</a>
+    <a class="text-headline-sm font-label-md text-on-surface-variant hover:text-primary" href="packages.html">Packages</a>
+    <a class="text-headline-sm font-label-md text-on-surface-variant hover:text-primary" href="business.html">For Business</a>
+    <a class="text-headline-sm font-label-md text-on-surface-variant hover:text-primary" href="clinicians.html">For Clinicians</a>
+    <a class="text-headline-sm font-label-md text-on-surface-variant hover:text-primary" href="how-it-works.html">How It Works</a>
+    <a class="px-lg py-md bg-sunset-gold text-primary font-label-md rounded-xl shadow-md hover:shadow-lg mt-md" href="packages.html">Start Free Trial</a>
+</div>
+
+<main class="pt-20">
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden py-xl md:py-[120px] bg-surface">
+        <div class="max-w-container-max mx-auto px-gutter grid grid-cols-1 md:grid-cols-12 items-center gap-xl">
+            <div class="md:col-span-6 space-y-md">
+                <span class="inline-block px-sm py-xs bg-primary-container text-on-primary-container rounded-full font-label-sm text-label-sm">Clinically Guided Excellence</span>
+                <h1 class="text-display-lg-mobile md:text-display-lg font-display-lg text-primary max-w-lg leading-tight">
+                    Stop managing your health with sticky notes.
+                </h1>
+                <p class="text-body-lg font-body-lg text-on-surface-variant max-w-md italic">
+                    Experience a health journey that bridges the gap between sophisticated clinician expertise and approachable modern technology, specifically tailored for the Botswana context.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-md pt-sm">
+                    <a class="px-lg py-md bg-sunset-gold text-primary font-label-md rounded-xl shadow-sm text-center hover:shadow-md transition-shadow active:scale-[0.98]" href="packages.html">
+                        Start Free Trial
+                    </a>
+                    <a class="px-lg py-md border border-outline text-primary font-label-md rounded-xl text-center hover:bg-surface-variant transition-colors" href="business.html">
+                        Book a Demo
+                    </a>
+                </div>
+                <div class="flex items-center gap-sm pt-md">
+                    <div class="flex -space-x-3">
+                        <img class="w-10 h-10 rounded-full border-2 border-surface object-cover" alt="Health Haven Clinician Profile" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCp9YKDWUcJqABIkyGgyPzyrBcD2dAWHXLiBdYzKCs4XRA_set-tjlPRkCItsQk6eOI8RRTxRTjkwbq2OV1QXWcetZXgdRYOAnKlI4JoB0zo0fVUpHSypdRKAC5npUTbmJW5Gw7sSfJzTuPhpjdLMcFnd00dibgt0YWyIiULs2d9Io0StGS5QsNnnzxd-wJQkeq5fCnBIwbFn8GcRa2elNXFVA4hXjEb5gHWkoKNPhwVsd1t-o45iq9KaZSBXjRDYBlE-QsOgskBh9n"/>
+                        <img class="w-10 h-10 rounded-full border-2 border-surface object-cover" alt="Health Haven Clinician Profile" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsGDLgZFskbwVlQ9lCfBdO7EBlE_6nBttk6q8SJ0-vCN3euW4egr-NMPN0qD940E1o-o0aDsZ94QyPnU8jZB8MwCVeBbQ_veST2MxQ1zBIa8YdmSM2JXvwi3xbm3B1VQv-7GIG1Di6VVjQ1TDoq_uwILkaXt0lXz2Y03iLRFZ1CuHzOein9dZBhrTk6YflpMuMgbCHjLtp9BupG_Fv4v_98ifhENg9mFhyQdipiR5IxafIuXZ1HFKK1YPHjdvIciNQCRY-VnYb5kie"/>
+                        <img class="w-10 h-10 rounded-full border-2 border-surface object-cover" alt="Health Haven Clinician Profile" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvpLgHLPyknEkpJpAsPOUn2e2Ax4juuvDrPMZV5_OTktR-rY_lIxwJc4G7VwF7r-oCEmtL9umDlIkwrRVhiSjFUVqgXpgDVlhxh1LN2gqwmklyziBF-9Nlay51oaTW1OTBp3YN96Is8QxctGpopMMy8MX59KfrHe0ZYKeaj3gr-mqsF57_xw2PBaBjijYAuer1GYGjZUIR8B_fmcjnThRwG6k1TpKE70tcsy5MFcd8TnU_dluAM1-0e9vkVsJKibZNl9y5GOlbPhhO"/>
+                    </div>
+                    <p class="text-label-sm font-label-sm text-on-surface-variant">Trusted by 200+ BHPC Clinicians</p>
+                </div>
+            </div>
+            <div class="md:col-span-6 relative animate-fade-in">
+                <div class="aspect-[4/5] rounded-[32px] overflow-hidden shadow-xl">
+                    <img class="w-full h-full object-cover" alt="A doctor consulting patient in modern Gaborone clinic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAK0dRAxJqGR71_xyWTwsGmPLko80rg939in83u0ixvU56Xw5htWIvkdozRNUeMvlwtrYdDE6HcKvgGlskTJKe9qW9i6AT6ed92ILFQnZgQzxCRlQWrqccehQoxeRJWvib3Mh-2sbYbb52a-qMBVF6xbbfTFIYyj1ROn-ZZVFqZ9N7378MVHlqFs4j0cNKi9TYPsq--2KQzJI7Kkt1JaZbr1hVpfy9KcdjRx0VPjO0bTMmX4x0CZ-ju0PpFz9sc9BwdOGA9lQncFnt_"/>
+                </div>
+                <div class="absolute -bottom-6 -left-6 bg-surface-container-highest p-md rounded-2xl shadow-lg border border-outline-variant max-w-[240px] hidden sm:block">
+                    <div class="flex items-center gap-sm">
+                        <span class="material-symbols-outlined text-primary" data-weight="fill">verified</span>
+                        <span class="font-label-md text-primary">BHPC Certified</span>
+                    </div>
+                    <p class="text-label-sm text-on-surface-variant mt-1">Full compliance with Botswana healthcare regulations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Proposition / Bento Grid -->
+    <section class="py-xl bg-surface-container-low">
+        <div class="max-w-container-max mx-auto px-gutter">
+            <div class="text-center mb-lg">
+                <h2 class="text-headline-md font-headline-md text-primary mb-sm">Clinician-led, data-driven.</h2>
+                <p class="text-body-md font-body-md text-on-surface-variant max-w-2xl mx-auto italic">We don't just track data; we interpret it within the context of your life and Botswana's unique health landscape.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-md h-auto md:h-[600px]">
+                <!-- Large Feature -->
+                <div class="md:col-span-2 md:row-span-2 bg-surface p-lg rounded-[24px] flex flex-col justify-between border border-outline-variant hover:shadow-lg transition-all group">
+                    <div>
+                        <span class="material-symbols-outlined text-[48px] text-primary mb-md">clinical_notes</span>
+                        <h3 class="text-headline-sm font-headline-sm text-primary mb-sm">Clinical Interpretation</h3>
+                        <p class="text-body-md font-body-md text-on-surface-variant">Every metric is reviewed by licensed professionals. You get more than charts; you get clinical clarity and actionable medical advice.</p>
+                    </div>
+                    <div class="mt-lg rounded-xl overflow-hidden aspect-video">
+                        <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Tablet displaying clinical dashboard and metrics" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6VNCn4msmg3MS7a6TPk_XSZ4BoIVaG8GjWC8hAT5P5clRU5B2JLJEK-F6NtxX0jRtbbeDsxspUaiVD7Ni_tv2KFXSUBVtgVV0gChU-vkOPveuZEGAwVGhC_Y-2kPBL3KpZySPUjjZwXnb0McvNmn-v26mQvrCYUPP_nCbddzpkjJrbzyQSZ8ft0JxgFgJG8LQoJLRKO6adkCJtCetIP8WbLBs76wECdS279KTB6qPp3Gup7xXtft73mN2_XN6geKgqIqmL02Rj9-f"/>
+                    </div>
+                </div>
+                <!-- Medium Feature 1 -->
+                <div class="md:col-span-2 bg-primary p-lg rounded-[24px] flex items-center justify-between text-on-primary border border-primary">
+                    <div class="max-w-[60%]">
+                        <h3 class="text-headline-sm font-headline-sm mb-sm">Localized Care</h3>
+                        <p class="text-body-md font-body-md opacity-90">Designed specifically for Botswana, incorporating local health guidelines and cultural context.</p>
+                    </div>
+                    <span class="material-symbols-outlined text-[64px] opacity-40">location_on</span>
+                </div>
+                <!-- Small Feature 1 -->
+                <div class="bg-surface-container-highest p-md rounded-[24px] border border-outline-variant flex flex-col justify-center bento-cell">
+                    <span class="material-symbols-outlined text-primary mb-sm">lock</span>
+                    <h4 class="font-label-md text-primary">Secure Data</h4>
+                    <p class="text-label-sm text-on-surface-variant">Fully DPA 2024 compliant data infrastructure built for complete peace of mind.</p>
+                </div>
+                <!-- Small Feature 2 -->
+                <div class="bg-sunset-gold/10 p-md rounded-[24px] border border-sunset-gold/20 flex flex-col justify-center bento-cell">
+                    <span class="material-symbols-outlined text-primary mb-sm">support_agent</span>
+                    <h4 class="font-label-md text-primary">Continuous Monitoring</h4>
+                    <p class="text-label-sm text-on-surface-variant">Continuous vital tracking with clinician triage flags for peace of mind.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Signals / BHPC -->
+    <section class="py-lg bg-surface border-y border-outline-variant">
+        <div class="max-w-container-max mx-auto px-gutter flex flex-col md:flex-row items-center justify-between gap-lg">
+            <div class="flex items-center gap-md">
+                <div class="w-16 h-16 bg-surface-container-low rounded-full flex items-center justify-center border border-outline-variant">
+                    <span class="material-symbols-outlined text-primary text-[32px]">verified_user</span>
+                </div>
+                <div>
+                    <h4 class="font-headline-sm text-primary">BHPC Registered</h4>
+                    <p class="text-label-sm text-on-surface-variant">Registered with Botswana Health Professions Council</p>
+                </div>
+            </div>
+            <div class="flex flex-wrap justify-center gap-lg items-center text-label-md font-bold text-primary/60">
+                <div class="flex items-center gap-2">
+                    <span class="material-symbols-outlined text-sm">check_circle</span> MINISTRY OF HEALTH COMPLIANT
+                </div>
+                <div class="flex items-center gap-2">
+                    <span class="material-symbols-outlined text-sm">check_circle</span> DPA 2024 APPROVED
+                </div>
+                <div class="flex items-center gap-2">
+                    <span class="material-symbols-outlined text-sm">check_circle</span> BQA SUPPORTED CLINICIANS
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pathway to Packages -->
+    <section class="py-xl">
+        <div class="max-w-container-max mx-auto px-gutter">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-md mb-lg">
+                <div class="max-w-2xl">
+                    <h2 class="text-headline-md font-headline-md text-primary mb-sm">Tailored Wellness Journeys</h2>
+                    <p class="text-body-md font-body-md text-on-surface-variant italic">From prevention screening to clinician-guided condition reversal, we have the ideal package for your specific health needs.</p>
+                </div>
+                <a class="text-primary font-label-md flex items-center gap-xs hover:underline" href="packages.html">
+                    View all packages <span class="material-symbols-outlined">arrow_forward</span>
+                </a>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-lg">
+                <!-- Package Card 1 -->
+                <div class="group bg-surface rounded-[24px] border border-outline-variant p-md flex flex-col hover:border-primary transition-all shadow-sm hover:shadow-md">
+                    <div class="aspect-square rounded-[16px] overflow-hidden mb-md">
+                        <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Blood pressure screening in Gaborone clinic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5Z2X-vaUky3EzRlUEYUKqKGTu7zh7xsKblQ8AHgUVOKh3YZzAr3oAFb3Jdqfwlj3F1j21oY4WaTatRuokmgIztigu1kiBJKhS-8gUSR09KbxxRdUlBlf9M5-7zUs_AD1_d-LU08jFvQSEB_vocnbWMHvuOMbI-kqWHKy27qWKWsfWpYxAs1wIZp51hwVAvka_er-MqvPDJU0pRQxZnXHb7ZaMP69RKMkCR1YontcsFtqqFz-8fwXJu-nB6T8bfwIrexJQY4UBP94B"/>
+                    </div>
+                    <h4 class="text-headline-sm font-headline-sm text-primary mb-xs">Mompati (Prevention)</h4>
+                    <p class="text-label-sm text-on-surface-variant mb-md uppercase tracking-wider">250 BWP / month</p>
+                    <ul class="space-y-sm mb-lg flex-grow">
+                        <li class="flex items-start gap-sm text-body-md text-on-surface-variant">
+                            <span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>
+                            Biometric vitals tracking
+                        </li>
+                        <li class="flex items-start gap-sm text-body-md text-on-surface-variant">
+                            <span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>
+                            Monthly health reports
+                        </li>
+                        <li class="flex items-start gap-sm text-body-md text-on-surface-variant">
+                            <span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>
+                            AI health nudges & guidance
+                        </li>
+                    </ul>
+                    <a class="w-full py-md bg-primary-container text-on-primary-container text-center font-label-md rounded-xl hover:bg-primary hover:text-on-primary transition-colors block" href="packages.html">Select Plan</a>
+                </div>
+                <!-- Package Card 2 (Featured) -->
+                <div class="group bg-primary text-on-primary rounded-[24px] p-md flex flex-col relative overflow-hidden shadow-xl scale-105 z-10">
+                    <div class="absolute top-4 right-4 bg-sunset-gold text-primary font-label-sm px-sm py-xs rounded-full">Best Seller</div>
+                    <div class="aspect-square rounded-[16px] overflow-hidden mb-md">
+                        <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Clinical specialist analyzing medical vitals" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-eJHaLHkZv_alnO7LqWf9rewKInuEU_ICGMj7FVGIfWmNUz8J3yqj54211sj8ge9zxncPbKhFOiOmGl9mRZMpfsWgSk29gyKlUQuQZzBxhxH7fIt7rdg0vp96GdcDfJFo72e_BITE8__QUgwn-t3WhDiMSIMy3LX0MSK61v1noQH4PGNAMosYMgF0nlzI3gjmag0p4cqiC73aNysqXeG6DV4nVlBwUgIVf2QOPVUo8JU4D0D9PUIhGrrx1WH-N9al6zc2t8Karf0n"/>
+                    </div>
+                    <h4 class="text-headline-sm font-headline-sm mb-xs">Mooki (Management)</h4>
+                    <p class="text-label-sm opacity-80 mb-md uppercase tracking-wider">950 BWP / month</p>
+                    <ul class="space-y-sm mb-lg flex-grow">
+                        <li class="flex items-start gap-sm text-body-md opacity-90">
+                            <span class="material-symbols-outlined text-sunset-gold text-[20px]">check_circle</span>
+                            Chronic disease monitoring
+                        </li>
+                        <li class="flex items-start gap-sm text-body-md opacity-90">
+                            <span class="material-symbols-outlined text-sunset-gold text-[20px]">check_circle</span>
+                            Monthly 1-to-1 dietitian consultations
+                        </li>
+                        <li class="flex items-start gap-sm text-body-md opacity-90">
+                            <span class="material-symbols-outlined text-sunset-gold text-[20px]">check_circle</span>
+                            All Mompati & Botsogo features
+                        </li>
+                    </ul>
+                    <a class="w-full py-md bg-sunset-gold text-primary text-center font-label-md rounded-xl hover:shadow-lg active:scale-[0.98] transition-all block" href="packages.html">Start 30-Day Free Trial</a>
+                </div>
+                <!-- Package Card 3 -->
+                <div class="group bg-surface rounded-[24px] border border-outline-variant p-md flex flex-col hover:border-primary transition-all shadow-sm hover:shadow-md">
+                    <div class="aspect-square rounded-[16px] overflow-hidden mb-md">
+                        <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Advanced diagnostic laboratory interface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGDLv23ZTuY3FWwq0Ew7FliAftsXuKjxS9u6hR7tEp-A9fQkaF224j48YzJDKbxzGKrMCZShmPX2l5I3W3f4YUq2xq5p-vdqlcwjqLIsU6-wTHzTIHgJlLJWjY15OeUbSuurbTJcw13DIOQsLwOWE6h62HQthEy1gheMMiSOusZuVucIPc4KJNgN3pQg2ThEmz5J-_nPBW-Ce8ko_7PHzq_pfbebS9hHxHQlFXhgQrtA8D-DmnfN7nO3PJ_BoJK7v-pkRHWcjj8OIS"/>
+                    </div>
+                    <h4 class="text-headline-sm font-headline-sm text-primary mb-xs">Motlamedi (Reversal)</h4>
+                    <p class="text-label-sm text-on-surface-variant mb-md uppercase tracking-wider">1,450 BWP / month</p>
+                    <ul class="space-y-sm mb-lg flex-grow">
+                        <li class="flex items-start gap-sm text-body-md text-on-surface-variant">
+                            <span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>
+                            Weekly video specialist consultations
+                        </li>
+                        <li class="flex items-start gap-sm text-body-md text-on-surface-variant">
+                            <span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>
+                            Direct 24/7 clinician priority chat
+                        </li>
+                        <li class="flex items-start gap-sm text-body-md text-on-surface-variant">
+                            <span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>
+                            Dedicated clinical case manager
+                        </li>
+                    </ul>
+                    <a class="w-full py-md bg-primary-container text-on-primary-container text-center font-label-md rounded-xl hover:bg-primary hover:text-on-primary transition-colors block" href="packages.html">Select Motlamedi</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="py-xl bg-primary text-on-primary text-center">
+        <div class="max-w-container-max mx-auto px-gutter">
+            <h2 class="text-display-lg-mobile md:text-headline-md font-headline-md mb-md">Ready to prioritize your health?</h2>
+            <p class="text-body-lg font-body-lg opacity-80 max-w-xl mx-auto mb-lg italic">Join hundreds of Batswana who have traded health confusion for absolute clinical clarity.</p>
+            <a class="inline-block px-[64px] py-md bg-sunset-gold text-primary font-headline-sm rounded-xl hover:shadow-xl hover:shadow-sunset-gold/20 transition-all active:scale-95 text-center" href="packages.html">
+                Start Your Free Trial
+            </a>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-surface-container-low border-t border-outline-variant">
+    <div class="w-full py-xl px-gutter max-w-container-max mx-auto flex flex-col md:flex-row justify-between gap-md">
+        <div class="space-y-md md:max-w-xs">
+            <a class="text-headline-sm font-headline-sm font-bold text-primary flex items-center gap-xs" href="index.html">
+                <span class="material-symbols-outlined text-primary text-2xl">shield_heart</span>
+                <span>Health Haven</span>
+            </a>
+            <p class="text-body-md font-body-md text-on-surface-variant">Providing clinically guided, culturally localized health journeys for the modern Batswana.</p>
+            <div class="flex gap-md">
+                <a class="text-on-surface-variant hover:text-primary transition-colors" href="https://twitter.com" target="_blank" aria-label="Twitter"><span class="material-symbols-outlined">social_leaderboard</span></a>
+                <a class="text-on-surface-variant hover:text-primary transition-colors" href="mailto:info@healthhaven.co.bw" aria-label="Email"><span class="material-symbols-outlined">alternate_email</span></a>
+                <a class="text-on-surface-variant hover:text-primary transition-colors" href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><span class="material-symbols-outlined">share</span></a>
+            </div>
+        </div>
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-xl">
+            <div class="flex flex-col gap-sm">
+                <span class="font-label-md text-primary">Sitemap</span>
+                <a class="text-on-surface-variant hover:text-primary transition-colors text-label-md" href="index.html">Homepage</a>
+                <a class="text-on-surface-variant hover:text-primary transition-colors text-label-md" href="customers.html">Customers</a>
+                <a class="text-on-surface-variant hover:text-primary transition-colors text-label-md" href="packages.html">Packages</a>
+                <a class="text-on-surface-variant hover:text-primary transition-colors text-label-md" href="business.html">For Business</a>
+                <a class="text-on-surface-variant hover:text-primary transition-colors text-label-md" href="clinicians.html">For Clinicians</a>
+                <a class="text-on-surface-variant hover:text-primary transition-colors text-label-md" href="how-it-works.html">How It Works</a>
+            </div>
+            <div class="flex flex-col gap-sm">
+                <span class="font-label-md text-primary">Compliance &amp; Legal</span>
+                <a class="text-on-surface-variant hover:text-primary transition-colors text-label-md" href="legal.html#privacy">Privacy Policy</a>
+                <a class="text-on-surface-variant hover:text-primary transition-colors text-label-md" href="legal.html#terms">Terms of Service</a>
+                <a class="text-on-surface-variant hover:text-primary transition-colors text-label-md" href="legal.html#dpa">DPA Compliance</a>
+            </div>
+            <div class="flex flex-col gap-sm">
+                <span class="font-label-md text-primary">Authority Info</span>
+                <p class="text-label-sm text-on-surface-variant">Registered BHPC Entity</p>
+                <p class="text-label-sm text-on-surface-variant">DPA Compliant 2024</p>
+                <p class="text-label-sm text-on-surface-variant">Gaborone, Botswana</p>
+            </div>
+        </div>
+    </div>
+    <div class="max-w-container-max mx-auto px-gutter py-md border-t border-outline-variant/30 text-center md:text-left flex flex-col md:flex-row justify-between items-center gap-base">
+        <p class="text-label-sm font-label-sm text-on-surface-variant">© 2026 Health Haven. All rights reserved. DPA 2024 Compliant.</p>
+        <p class="text-label-sm font-label-sm text-on-surface-variant italic">Health Haven is a marketing and acquisition portal. Clinical services are governed under separate clinical agreements.</p>
+    </div>
+</footer>
+
+<script>
+    // Mobile menu toggle
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenuClose = document.getElementById('mobile-menu-close');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    if (mobileMenuBtn && mobileMenuClose && mobileMenu) {
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.remove('translate-x-full');
+        });
+        mobileMenuClose.addEventListener('click', () => {
+            mobileMenu.classList.add('translate-x-full');
+        });
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('translate-x-full');
+            });
+        });
+    }
+
+    // Scroll animation effect
+    document.addEventListener('DOMContentLoaded', () => {
+        const observerOptions = {
+            threshold: 0.05
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        const animatedSections = document.querySelectorAll('section');
+        animatedSections.forEach(section => {
+            section.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-10');
+            observer.observe(section);
+        });
+    });
+</script>
+</body>
+</html>
